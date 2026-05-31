@@ -3,7 +3,7 @@
     "schema_version": "1.0",
     "project_name": "reasons",
     "created_at": "2026-05-31T13:50:42+00:00",
-    "updated_at": "2026-05-31T15:45:44+00:00",
+    "updated_at": "2026-05-31T15:51:28+00:00",
     "node_count": 257,
     "generator": "ftl-reasons/0.43.0"
   },
@@ -887,7 +887,7 @@
     },
     "engineering-design-vocabulary": {
       "text": "A precise engineering vocabulary \u2014 DFM integration, SMART targets, CTF identification, GD&T language, and TDP documentation standards \u2014 provides the shared language underlying the lab's systematic methodology",
-      "truth_value": "IN",
+      "truth_value": "OUT",
       "justifications": [
         {
           "type": "SL",
@@ -2048,7 +2048,7 @@
     },
     "methodology-transparent-integrated-facility": {
       "text": "The complete integrated facility (full concept-to-product-to-motion capability) combined with precision-documented fabrication (terminologically rigorous artifact outputs) means the facility's entire production chain is inspectable and auditable through standardized documentation at every stage.",
-      "truth_value": "IN",
+      "truth_value": "OUT",
       "justifications": [
         {
           "type": "SL",
@@ -2346,7 +2346,7 @@
     },
     "openlab-terminology-system": {
       "text": "OpenLab maintains a unified terminology system spanning standard engineering terms, coined neologisms, and formal rating systems (PRL, responsitory), reflecting a culture that deliberately names its practices.",
-      "truth_value": "IN",
+      "truth_value": "OUT",
       "justifications": [
         {
           "type": "SL",
@@ -2586,7 +2586,7 @@
     },
     "precision-documentation-framework": {
       "text": "The unified terminology system (standard engineering terms, coined neologisms, formal rating systems) combined with documentation quality standards (accessibility trails, optimized formats, file size limits, project/part distinctions) creates a precision documentation framework \u2014 content that is both semantically precise (controlled vocabulary ensures consistent meaning) and technically consistent (artifact standards ensure findability and portability).",
-      "truth_value": "IN",
+      "truth_value": "OUT",
       "justifications": [
         {
           "type": "SL",
@@ -2609,7 +2609,7 @@
     },
     "precision-documented-fabrication": {
       "text": "The fabrication-to-documentation pipeline tends toward both automatic generation and terminological rigor \u2014 the self-documenting fabrication process produces artifacts that flow into a precision documentation framework with controlled vocabulary and artifact standards, reducing (though not eliminating) the usual tradeoff between documentation volume and semantic precision.",
-      "truth_value": "IN",
+      "truth_value": "OUT",
       "justifications": [
         {
           "type": "SL",
@@ -2654,7 +2654,7 @@
     },
     "precision-engineered-production-pipeline": {
       "text": "When the precision documentation framework (controlled vocabulary and artifact standards) is applied alongside the disciplined rapid manufacturing process (pull-based, DFM-aware prototyping), it supports production artifacts that are both manufacturing-aware and terminologically consistent \u2014 though the degree of optimization depends on how tightly the two practices are integrated in a given workflow.",
-      "truth_value": "IN",
+      "truth_value": "OUT",
       "justifications": [
         {
           "type": "SL",
