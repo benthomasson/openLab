@@ -1,0 +1,716 @@
+{
+  "timestamp": "2026-05-31T11:19:04",
+  "status": "complete",
+  "model": "claude",
+  "timeout": 300,
+  "dry_run": false,
+  "filters": {
+    "belief_ids": null,
+    "min_depth": null,
+    "depends_on": null,
+    "namespace": null,
+    "sample": null,
+    "visible_to": null
+  },
+  "reviewed": 84,
+  "total_derived": 104,
+  "summary": {
+    "invalid": 14,
+    "insufficient": 16,
+    "unnecessary": 9
+  },
+  "results": [
+    {
+      "id": "academically-grounded-design-methodology",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "\"Endorsed by institutional review\" is stronger than what the antecedent establishes \u2014 university affiliation confers credibility by association, which is not the same as formal institutional endorsement or review."
+    },
+    {
+      "id": "complete-integrated-facility",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Both antecedents contribute distinct halves (lifecycle workspace + power-motion platform) and the conclusion follows, though \"any mechatronic concept\" mildly overgeneralizes the lab's actual scope."
+    },
+    {
+      "id": "complete-mechatronic-workstation",
+      "valid": true,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Four distinct capabilities are correctly identified, but calling them a \"unified\" pipeline assumes workflow integration between stages that is plausible but not established by the antecedents \u2014 co-existence is not the same as integration."
+    },
+    {
+      "id": "complete-power-motion-platform",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Power integration and multi-domain actuation contribute distinct infrastructure layers; the interoperable-standards claim is supported by both antecedents mentioning shared DIN/extrusion standards."
+    },
+    {
+      "id": "complete-professional-workspace",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Straightforward composition: one antecedent covers occupational safety/ergonomics, the other covers research-grade environmental controls, and the conclusion claims both are met simultaneously."
+    },
+    {
+      "id": "compounding-design-knowledge",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Methodology amplification (each cycle feeds the next) plus durable self-documentation (captured knowledge persists) jointly support the compounding returns claim."
+    },
+    {
+      "id": "compounding-facility-knowledge-institution",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Valid provided \"lab replication\" in antecedent 1 encompasses physical facility specifications alongside methodology \u2014 a reasonable reading but one the derivation relies on implicitly."
+    },
+    {
+      "id": "compounding-reproducible-knowledge",
+      "valid": true,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The claim that replicated labs \"accelerate rather than merely persist\" requires that the blueprint captures the compounding mechanism itself, not just a static snapshot \u2014 plausible from \"systematically documented methodology\" but not guaranteed."
+    },
+    {
+      "id": "concept-to-product-chain",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Each antecedent covers a distinct segment (design, fabrication-to-mounting, single-session speed); together they span the claimed concept-to-testable-product chain."
+    },
+    {
+      "id": "consumable-infrastructure",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Sound aggregation: each of the four antecedents contributes a distinct consumable category explicitly named in the conclusion."
+    },
+    {
+      "id": "convergent-open-engineering-apex",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "\"Knowledge compounds across sites, not just within them\" requires inter-site knowledge-sharing mechanisms not established by either antecedent \u2014 independent compounding at each franchise site is not the same as network-level compounding."
+    },
+    {
+      "id": "demonstrated-breadth-and-institutional-bridge",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Breadth/depth provides empirical credibility while the institutional-open bridge provides accessibility and authority \u2014 both are needed for the \"credible track record that is transparently documented\" claim."
+    },
+    {
+      "id": "dfm-operationalized",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The glossary defines the abstract concept and the FDM system provides its concrete implementation; both are needed to establish the explicit theory-to-practice bridge the conclusion claims."
+    },
+    {
+      "id": "digital-workspace-system",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Straightforward aggregation: hardware platform + software stack + archival format = complete digital workspace system."
+    },
+    {
+      "id": "digitally-integrated-professional-facility",
+      "valid": false,
+      "sufficient": false,
+      "necessary": false,
+      "unnecessary_antecedents": [
+        "complete-professional-workspace"
+      ],
+      "comment": "\"Back into design iteration\" asserts a bidirectional feedback loop not established by the antecedents (the documentation pipeline is unidirectional: physical\u2192digital), and the professional workspace's safety/environmental features are orthogonal to the digital-physical integration mechanism."
+    },
+    {
+      "id": "disciplined-efficient-design",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Pull-based constraint (efficiency) applied to systematic methodology (rigor) directly produces the claimed synthesis of discipline and efficiency."
+    },
+    {
+      "id": "disciplined-rapid-manufacturing",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Design discipline targeting real needs constraining DFM-aware rapid prototyping directly supports \"speed without waste, production-ready from inception.\""
+    },
+    {
+      "id": "documentation-quality-standards",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Four meta-conventions each contribute a distinct documentation artifact standard explicitly referenced in the conclusion."
+    },
+    {
+      "id": "durable-self-documenting-knowledge",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Self-documenting fabrication provides the capture mechanism and resilient Toyota-backed infrastructure provides the persistence mechanism \u2014 both are needed for the \"durable\" qualifier."
+    },
+    {
+      "id": "education-community-ecosystem",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The \"self-reinforcing\" claim is supported by the open-model antecedent's explicit expert\u2194learner feedback loop; each remaining antecedent contributes a distinct outreach channel named in the conclusion."
+    },
+    {
+      "id": "electronics-prototyping-platform",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Each antecedent maps to a distinct element named in the claim (bins, DIN rail, connectors, devices, MCU boards), and the synthesis that they span component selection through wired assembly follows from their combined coverage."
+    },
+    {
+      "id": "empirically-grounded-open-methodology",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The conjunction is straightforward \u2014 one antecedent establishes empirical validation, the other establishes self-documentation \u2014 and the claim is precisely their union."
+    },
+    {
+      "id": "empirically-reproducible-methodology",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The reproducible-lab-blueprint antecedent explicitly includes 'systematically documented methodology,' so embedding the empirically-validated methodology within it logically entails that replicators inherit proven practices."
+    },
+    {
+      "id": "engineering-design-vocabulary",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The antecedents are standalone glossary definitions that do not establish any relationship to the lab's systematic methodology \u2014 the claim that these terms 'underlie' the methodology requires evidence of their operational use, which no antecedent provides."
+    },
+    {
+      "id": "environmental-control-system",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Each antecedent contributes a distinct environmental control mechanism (humidity/absorbers, HEPA filtration, climate-controlled storage) explicitly named in the claim."
+    },
+    {
+      "id": "fabrication-to-product-pipeline",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The three antecedents map cleanly to the three pipeline stages named in the claim: FDM printing, parametric designs, and four-standard structural mounting."
+    },
+    {
+      "id": "fdm-manufacturing-system",
+      "valid": true,
+      "sufficient": true,
+      "necessary": false,
+      "unnecessary_antecedents": [
+        "printegrate-concept"
+      ],
+      "comment": "The claim's three specific elements \u2014 codified design rules, preferred material (ABS), and reliability-focused tooling \u2014 are fully covered by fdm-design-rules, deferred-abs-material, and printing-setup; printegrate-concept addresses OTS integration philosophy which the claim does not reference."
+    },
+    {
+      "id": "finished-product-fabrication-chain",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Surface finishing adds the appearance/finish stage that the fabrication pipeline explicitly lacks, and their union directly supports the 'full manufacturing chain' claim."
+    },
+    {
+      "id": "fluid-pneumatic-infrastructure",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Each antecedent maps to a distinct domain named in the claim: tubing for general routing, push-fit for connections, RO for purified water, OpenAir for pressurized air."
+    },
+    {
+      "id": "franchisable-open-engineering-model",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The 'franchisable' characterization follows from the paradigm's self-propagating scalability combined with the blueprint's concrete reproducibility, though the phrase 'from published documentation alone' adds a completeness guarantee slightly stronger than the antecedents explicitly warrant."
+    },
+    {
+      "id": "full-lifecycle-knowledge-capture",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The claim asserts a closed loop (research \u2192 product \u2192 education) but the antecedents describe two separate paths \u2014 research-to-education (research \u2192 teaching materials directly) and concept-to-product (concept \u2192 artifact) \u2014 with no evidence that research feeds into the concept-to-product chain or that product outputs feed back into the education pipeline."
+    },
+    {
+      "id": "full-spectrum-fabrication",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The three antecedents cover polymers (FDM, PVC), composites (fiberglass rebar), and metals (metalwork) with reproducible processes, which within a prototyping lab context reasonably constitutes 'full material spectrum.'"
+    },
+    {
+      "id": "holistic-workspace-environment",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The synthesis that co-located environment and safety systems form an integrated workspace management approach is reasonable, though the claim that they are treated as 'integrated concerns rather than separate checklists' is a characterization not strictly derivable from the antecedents' content."
+    },
+    {
+      "id": "innovation-culture-vocabulary",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Each glossary term is correctly categorized (method, role, anti-pattern, technology class) and the terms are indeed non-standard coinages or reframings that constitute a distinctive vocabulary."
+    },
+    {
+      "id": "institutional-context",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Direct factual synthesis \u2014 person (openlab-author), institution and tenure (tamu-context), and role (tamu-role) combine to establish exactly the claim stated."
+    },
+    {
+      "id": "institutional-independence-through-documentation",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "If knowledge capture is durable beyond personnel changes and the operational model is self-sustaining via community, then institutional withdrawal does not destroy either dimension \u2014 independence follows."
+    },
+    {
+      "id": "institutional-open-bridge",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Each antecedent contributes a distinct element of the bridge: institutional-context provides academic credibility, open-documentation-pipeline provides the publishing mechanism, and education-community-ecosystem provides the non-academic audience."
+    },
+    {
+      "id": "institutionally-anchored-knowledge-paradigm",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The claim is essentially a conjunction of its two antecedents \u2014 institutional validation provides academic authority, knowledge-preserving paradigm provides self-sustaining documentation \u2014 with no inferential leap beyond their union."
+    },
+    {
+      "id": "institutionally-validated-portfolio",
+      "valid": true,
+      "sufficient": true,
+      "necessary": false,
+      "unnecessary_antecedents": [
+        "demonstrated-breadth-and-institutional-bridge"
+      ],
+      "comment": "The demonstrated-breadth-and-institutional-bridge antecedent already contains both portfolio breadth AND institutional backing, making the 'double validation' claim derivable from portfolio-validated-methodology alone (which provides empirical methodology validation) combined with institutional context already embedded in the other antecedent \u2014 but strictly, portfolio-validated-methodology plus any institutional credibility source suffices, and demonstrated-breadth-and-institutional-bridge is redundant given its content overlaps with portfolio-validated-methodology on the breadth dimension."
+    },
+    {
+      "id": "integrated-fluidics-mechatronics-capability",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Fluid routing infrastructure plus actuation control capability logically extends the lab's domain into pressure-driven and fluidic systems that neither antecedent covers alone."
+    },
+    {
+      "id": "knowledge-dissemination-loop",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The loop closure follows from ant-2's 'self-reinforcing education ecosystem' combined with ant-1's digitization pipeline \u2014 both directional flows are explicitly stated."
+    },
+    {
+      "id": "knowledge-preserving-open-paradigm",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "'Scales WITHOUT knowledge degradation' is an absolute claim not entailed by the antecedents \u2014 'durable' and 'survivable' describe resilience mechanisms, not a guarantee of zero degradation at arbitrary scale."
+    },
+    {
+      "id": "lab-environment-and-maintenance",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Surface finishing (paint/polish/woodwork) is explicitly described in its antecedent as complementing 'primary manufacturing,' making it a fabrication process, not a maintenance/environment concern \u2014 the grouping commits a category error."
+    },
+    {
+      "id": "lab-organization-infrastructure",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "All four antecedents contribute distinct organizational functions (modular mounting, labeling, electrical integration, digitization), though the scanner's fit under 'physical organization' is a mild stretch since it manages information rather than physical space."
+    },
+    {
+      "id": "lab-safety-ergonomics",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Straightforward grouping \u2014 each antecedent maps directly to a distinct safety/ergonomics concern named in the claim."
+    },
+    {
+      "id": "lab-services-infrastructure",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Both antecedents describe domain-independent infrastructure; the 'shared utilities in a building' analogy follows from their cross-cutting, workflow-agnostic nature."
+    },
+    {
+      "id": "mechatronics-integration-platform",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "DIN rail and extrusion standards appear independently in electronics (ant-1), structural mounting (ant-2), and benchtop testing (ant-3) \u2014 convergence on shared standards is directly evidenced across all three."
+    },
+    {
+      "id": "methodology-amplified-design-ecosystem",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "'Each new parametric design inherits validated rules' requires an unstated inheritance mechanism \u2014 the antecedents describe methodology, a product chain, and multi-domain scope, but not how validated rules propagate to new designs automatically."
+    },
+    {
+      "id": "methodology-driven-fabrication",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Methodology (ant-1) applied to fabrication capability (ant-2) directly yields 'structured progression rather than ad-hoc experimentation.'"
+    },
+    {
+      "id": "methodology-transparent-integrated-facility",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Complete facility coverage (ant-1) plus precision auto-generated documentation (ant-2) logically yields an inspectable and auditable production chain at every stage."
+    },
+    {
+      "id": "modular-mounting-ecosystem",
+      "valid": true,
+      "sufficient": true,
+      "necessary": false,
+      "unnecessary_antecedents": [
+        "emt-conduit",
+        "extrusion-sourcing"
+      ],
+      "comment": "beam-materials already defines all four standards including EMT, and din-rail-designs establishes the adapter bridging pattern \u2014 emt-conduit adds redundant detail on one beam type and extrusion-sourcing addresses purchasing, not the mounting system itself."
+    },
+    {
+      "id": "multi-domain-actuation-platform",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Electrical+mechanical (ant-1) plus fluidic/pneumatic (ant-2) directly yields three-domain actuation coverage."
+    },
+    {
+      "id": "multi-domain-production-system",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Multi-domain actuation (ant-1) combined with production-ready infrastructure (ant-2) directly supports producing research-grade prototypes spanning all three physical domains."
+    },
+    {
+      "id": "multi-domain-project-portfolio",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Six projects in different domains proves breadth of application, not that the full OpenLab methodology (PRL, Toyota, etc.) is domain-agnostic \u2014 methodological unity across the projects is an unstated assumption since the antecedents only describe each project's domain, not its methods."
+    },
+    {
+      "id": "open-documentation-pipeline",
+      "valid": true,
+      "sufficient": true,
+      "necessary": false,
+      "unnecessary_antecedents": [
+        "github-for-mes"
+      ],
+      "comment": "github-for-mes describes teaching mechanical engineers to use the pipeline, not the pipeline's existence \u2014 the pipeline is fully established by the other four antecedents (Docsify rendering, GrabCAD publishing, documentation process, CAD template)."
+    },
+    {
+      "id": "open-engineering-paradigm",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Production-ready scalability (ant-1) plus self-reinforcing educational resilience (ant-2) together support a self-propagating open model; both antecedents share the self-sustaining flywheel, and their union covers both the production and education dimensions claimed."
+    },
+    {
+      "id": "openlab-identity-and-mission",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Three antecedents provide distinct identity facets \u2014 technical focus, transformative purpose, and bridging mission \u2014 that together compose the dual 'what it does and why' structure of the claim."
+    },
+    {
+      "id": "openlab-terminology-system",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Rating systems (PRL), coined neologisms (responsitory), engineering vocabulary, and innovation vocabulary together cover all three terminology categories named in the claim and evidence a deliberate naming culture."
+    },
+    {
+      "id": "operational-excellence-framework",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Toyota principles (ant-2) concretized through physical organization with measurable retrieval times (ant-1) and deliberate standardization (ant-3) \u2014 all three are load-bearing for the 'measurable operational excellence' claim."
+    },
+    {
+      "id": "parametric-fabrication-ecosystem",
+      "valid": true,
+      "sufficient": true,
+      "necessary": false,
+      "unnecessary_antecedents": [
+        "materials-3dprinting",
+        "process-fabrication"
+      ],
+      "comment": "OTP parts already establishes parametric 3D printing; materials-3dprinting adds best-practices depth and process-fabrication adds general fabrication scope, but neither is required \u2014 the core claim (parametric + multi-material + automation = scalable ecosystem) is carried by otp-parts, materials-metalwork, and blended-automation."
+    },
+    {
+      "id": "physical-organization-system",
+      "valid": true,
+      "sufficient": true,
+      "necessary": false,
+      "unnecessary_antecedents": [
+        "station-concept"
+      ],
+      "comment": "Station-concept defines the design philosophy behind stations but tour-structure already establishes stations' organizational role; the retrieval-time claim doesn't depend on how stations are conceptually motivated."
+    },
+    {
+      "id": "portfolio-validated-methodology",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Six domains using one methodology is sound evidence of generality; portfolio provides breadth evidence while methodology provides the thing being validated."
+    },
+    {
+      "id": "power-integrated-fabrication",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The recursive property is substantiated: 3D-printed adapters (fabrication ecosystem output) extend power tools (which are used in fabrication), creating a genuine self-customization loop."
+    },
+    {
+      "id": "power-integrated-mechatronics",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The claim that these systems 'share common standards and design language' is not established by the antecedents \u2014 colocating two capability domains in one workspace does not demonstrate interoperability or shared standards between them."
+    },
+    {
+      "id": "power-tool-ecosystem",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Each antecedent maps to a distinct claim component: Ridgid provides warranty/support, adapters provide custom extension, 18650 provides a standardized power platform."
+    },
+    {
+      "id": "precision-documentation-framework",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Clean decomposition: terminology system provides semantic precision, quality standards provide technical consistency \u2014 each antecedent maps to exactly one dimension of the claim."
+    },
+    {
+      "id": "precision-documented-fabrication",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The antecedents establish that precision standards exist and that fabrication self-documents, but not that the self-documenting pipeline conforms to the precision standards \u2014 the integration is assumed, not derived."
+    },
+    {
+      "id": "precision-engineered-production-pipeline",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Same integration gap: having a precision documentation framework and a disciplined manufacturing process does not establish that the framework is applied to manufacturing \u2014 'ensures every production artifact' requires evidence of integration the antecedents don't provide."
+    },
+    {
+      "id": "printegration-design-library",
+      "valid": true,
+      "sufficient": true,
+      "necessary": false,
+      "unnecessary_antecedents": [
+        "vacuum-adapter"
+      ],
+      "comment": "The claim enumerates 'bearings, hinges, sleeves, and power adapters' \u2014 four families mapping to four antecedents; vacuum-adapter adds evidence but isn't among the enumerated categories and could be removed without weakening the conclusion."
+    },
+    {
+      "id": "process-maturity-system",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "PRL gates plus four process stages logically compose into staged progression; PRL's self-described implementation immaturity is a factual concern about the antecedent, not a logical defect in the derivation."
+    },
+    {
+      "id": "production-conscious-rapid-prototyping",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "DFM awareness embedded in each iteration plus rapid iteration capability directly entails prototypes that are manufacturing-constrained from inception \u2014 clean two-input composition."
+    },
+    {
+      "id": "production-ready-research-infrastructure",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "For the modest 'small-batch production' scope, Toyota-grade organization plus a pipeline that explicitly produces 'products' (not just prototypes) plus rapid iteration plausibly suffice."
+    },
+    {
+      "id": "professional-research-infrastructure",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Vendor-partnered methodology elevates research rigor while environmental controls elevate material reliability \u2014 both are independently necessary to cross the hobbyist-to-professional threshold."
+    },
+    {
+      "id": "professionally-maintained-workspace",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Straightforward union: holistic-workspace-environment covers environmental quality and safety, lab-services-infrastructure covers shared services \u2014 the claim is their conjunction."
+    },
+    {
+      "id": "professionally-systematic-fabrication",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The claim is a capability statement about what the facility provides, which follows from the union of professional workspace and methodology-driven fabrication \u2014 neither alone covers both dimensions."
+    },
+    {
+      "id": "project-breadth-and-depth",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Portfolio provides breadth evidence (six domains), SCUTTLE provides depth evidence (full lifecycle) \u2014 clean decomposition with no overlap in their roles."
+    },
+    {
+      "id": "rapid-iteration-capability",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Each antecedent contributes a distinct requirement for same-session prototyping: consumables for materials, FDM for fabrication, standardization for part compatibility."
+    },
+    {
+      "id": "reproducible-lab-blueprint",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "'Transferable blueprint for replicating' requires replication instructions (equipment lists, build sequences, skill prerequisites, sourcing guides) that are not established by the antecedents \u2014 published project documentation is not a lab replication guide."
+    },
+    {
+      "id": "research-methodology-system",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Each antecedent maps one-to-one to a named component: distributors as expert partners, references as curated materials, methods as the defined pipeline."
+    },
+    {
+      "id": "research-to-education-pipeline",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "The three antecedents form a complete input-mechanism-output chain: professional research produces outputs, dissemination loop converts them, educational platform distributes them \u2014 'without separate effort' is supported by the loop being integrated into the workflow rather than bolted on."
+    },
+    {
+      "id": "unified-lifecycle-workspace",
+      "valid": false,
+      "sufficient": false,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Antecedent concept-to-product-chain supports 'initial concept to testable product,' but the conclusion escalates this to 'final product' and 'every lifecycle stage' \u2014 a meaningful overstatement, since testing, validation, documentation, and production-readiness stages are not addressed by either antecedent."
+    },
+    {
+      "id": "utility-station-infrastructure",
+      "valid": true,
+      "sufficient": true,
+      "necessary": false,
+      "unnecessary_antecedents": [
+        "station-concept"
+      ],
+      "comment": "The wash and charge station descriptions alone establish that cross-cutting utility stations exist; station-concept defines the design philosophy behind stations generally but is not required to conclude that these two serve shared, non-domain-specific roles."
+    },
+    {
+      "id": "workspace-toolbox-system",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Four domain-specific toolbox descriptions establish the specialization claim, and toolbox-mods establishes the consistent form factor and active-workspace pairing \u2014 all five antecedents are load-bearing for the full conclusion."
+    },
+    {
+      "id": "worry-mitigated-design",
+      "valid": true,
+      "sufficient": true,
+      "necessary": true,
+      "unnecessary_antecedents": [],
+      "comment": "Pull-based design (act only on actual demand) is a direct structural inverse of worry (act on anticipated problems) \u2014 the inference is sound, though the claim's use of 'the operational countermeasure' implies exclusivity when other Toyota principles like PDCA also mitigate premature effort."
+    }
+  ]
+}

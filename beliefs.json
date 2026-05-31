@@ -3,11 +3,34 @@
     "schema_version": "1.0",
     "project_name": "reasons",
     "created_at": "2026-05-31T13:50:42+00:00",
-    "updated_at": "2026-05-31T14:08:12+00:00",
-    "node_count": 129,
+    "updated_at": "2026-05-31T15:45:44+00:00",
+    "node_count": 257,
     "generator": "ftl-reasons/0.43.0"
   },
   "nodes": {
+    "academically-grounded-design-methodology": {
+      "text": "The institutionally validated portfolio (university credibility supporting multi-domain methodology) combined with disciplined rapid manufacturing (Toyota pull-based, DFM-aware prototyping) suggests the lab's manufacturing methodology carries both academic validation and production discipline \u2014 indicating it is not only demonstrated in practice but also supported by institutional standing.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "institutionally-validated-portfolio",
+            "disciplined-rapid-manufacturing"
+          ],
+          "outlist": [],
+          "label": "Connects two orphaned depth-4 nodes \u2014 institutional validation meets manufacturing discipline"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
     "actuators-taxonomy": {
       "text": "All mechanical actuators in the lab move energy through heat, pressure, or motion, applied to solids, liquids, or gases, driven by electrical inputs. For robotics, every machine is ultimately one or more actuators controlled by logic. If you learn all actuators and how to control them, you can design anything.",
       "truth_value": "IN",
@@ -33,6 +56,30 @@
       "truth_value": "IN",
       "justifications": [],
       "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "autonomous-open-lab": {
+      "text": "The lab operates as a fully autonomous, self-sustaining open engineering facility \u2014 the community flywheel generates contributors, the professional workspace enables quality work, and the cycle is self-reinforcing without external intervention",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "self-sustaining-lab-model",
+            "complete-professional-workspace"
+          ],
+          "outlist": [
+            "tamu-communication",
+            "open-items",
+            "printegrate-problems"
+          ],
+          "label": "The positive claim (self-sustaining model + professional workspace) is strong, but three unresolved issues each represent a category of friction: institutional communication gaps limit leverage, open design challenges limit completeness, and printegration problems limit manufacturing maturity. All three must be OUT for true autonomy."
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -124,6 +171,75 @@
       "date": "",
       "metadata": {}
     },
+    "community-onboarding-viable": {
+      "text": "External contributors can effectively onboard into OpenLab design and fabrication projects through the documentation pipeline and community channels",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "open-documentation-pipeline",
+            "education-community-ecosystem",
+            "digital-workspace-system"
+          ],
+          "outlist": [
+            "tamu-communication",
+            "open-items"
+          ],
+          "label": "onboarding requires clear documentation paths (blocked by communication gaps) and resolved example projects to learn from (blocked by open unfinished designs that confuse newcomers)"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "community-ready-full-stack-platform": {
+      "text": "OpenLab represents a community-ready full-stack hardware development platform where external contributors can participate at any lifecycle stage from concept through production and education.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "scalable-open-hardware-movement",
+            "full-lifecycle-knowledge-capture"
+          ],
+          "outlist": [
+            "open-items",
+            "tamu-communication"
+          ],
+          "label": "Scalable movement + lifecycle capture = community entry at any stage, but unfinished items and institutional communication gaps undermine accessibility"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "community-validated-transferability": {
+      "text": "External community adoption (open sharing model, 400+ videos, Discord, free ME curriculum) provides real-world validation that the portfolio-proven methodology works beyond the original lab context \u2014 adoption by others proves the methodology is transferable, not merely internally consistent",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "education-community-ecosystem",
+            "portfolio-validated-methodology"
+          ],
+          "outlist": [
+            "tamu-communication"
+          ],
+          "label": "Internal validation (portfolio) plus external adoption (community) together prove transferability \u2014 but institutional communication gaps undermine the bridge between the lab's proven methods and the community that would adopt them"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
     "community-youtube": {
       "text": "David Malawey's YouTube channel has 400+ engineering videos (youtube.com/@davidmalawey).",
       "truth_value": "IN",
@@ -133,6 +249,265 @@
       "source_hash": "",
       "date": "",
       "metadata": {}
+    },
+    "complete-autonomous-franchise": {
+      "text": "The autonomous open lab (self-sustaining facility) combined with the franchisable open engineering model would mean franchise sites can operate fully autonomously \u2014 self-sustaining in both operations and knowledge propagation.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "autonomous-open-lab",
+            "franchisable-open-engineering-model"
+          ],
+          "outlist": [
+            "tamu-communication",
+            "open-items",
+            "printegrate-problems"
+          ],
+          "label": "Triple-gated \u2014 requires resolution of all three systemic blockers before autonomous franchise deployment"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "complete-integrated-facility": {
+      "text": "The professional lifecycle workspace unified with the complete power-to-motion platform means any mechatronic concept can be taken from initial design through powered, actuated product within a single integrated environment \u2014 no external facilities required for the full electromechanical development chain.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "unified-lifecycle-workspace",
+            "complete-power-motion-platform"
+          ],
+          "outlist": [],
+          "label": "Lifecycle workspace covers concept-to-product while power-motion platform covers electronics-to-actuation \u2014 together they span the full chain"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "complete-mechatronic-workstation": {
+      "text": "A full electronics-to-motion development pipeline spans digital CAD workspace, electronics prototyping platform, scoped soldering workflow, and robotic actuation components \u2014 four previously orphaned capabilities that form a unified workstation",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "digital-workspace-system",
+            "electronics-prototyping-platform",
+            "soldering-workflow-system",
+            "robotics-actuation-cluster"
+          ],
+          "outlist": [],
+          "label": "design (CAD) + prototype (electronics bins + DIN power) + assemble (soldering) + actuate (servos/motors) = complete embedded-systems development chain"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "insufficient"
+      }
+    },
+    "complete-power-motion-platform": {
+      "text": "Power-integrated mechatronics (Ridgid cordless tools, 18650 cells, 3D-printed adapters extending through the full electronics-to-motion pipeline) merged with the multi-domain actuation platform (electronics + mechanics + fluids on shared DIN/extrusion standards) creates a complete power-to-motion platform \u2014 a unified energy infrastructure spanning battery-driven hand tools through robotic servo actuators to pneumatic and fluidic systems, all on interoperable standards.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "power-integrated-mechatronics",
+            "multi-domain-actuation-platform"
+          ],
+          "outlist": [],
+          "label": "depth-4 \u2014 power tool energy ecosystem (d3) + multi-domain actuation (d3) = unified energy-to-motion infrastructure across all physical domains"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "complete-professional-workspace": {
+      "text": "A safety-organized workspace (color-coded PPE, calculated lighting, layered organization) combined with professional research infrastructure (vendor partnerships, HEPA filtration, humidity monitoring) establishes a workspace meeting both occupational safety standards and professional-grade research requirements simultaneously.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "safety-organized-workspace",
+            "professional-research-infrastructure"
+          ],
+          "outlist": [],
+          "label": "Safety/ergonomics and environmental controls converge into a workspace that is both safe for people and suitable for precision work"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "compounding-design-knowledge": {
+      "text": "Each design cycle simultaneously amplifies the methodology-driven ecosystem (new patterns feed future designs) and produces durable self-documenting knowledge (fabrication artifacts automatically flow into documentation) \u2014 creating compounding knowledge returns where every completed project makes the next project both easier to build and better documented than the last.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "methodology-amplified-design-ecosystem",
+            "durable-self-documenting-knowledge"
+          ],
+          "outlist": [],
+          "label": "depth-5 \u2014 ecosystem amplification (d4) + self-documenting durability (d4) = compounding returns on design investment"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "compounding-facility-knowledge-institution": {
+      "text": "The compounding reproducible knowledge (depth-6, each replication inherits the compounding engine) combined with the complete integrated facility (depth-5, full concept-to-motion capability) means the self-perpetuating institution isn't just preserving methodology \u2014 it's preserving and compounding the complete physical production capability across every replication.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "compounding-reproducible-knowledge",
+            "complete-integrated-facility"
+          ],
+          "outlist": [],
+          "label": "Depth-7 \u2014 integrates the facility completeness chain into the knowledge compounding chain"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "compounding-reproducible-knowledge": {
+      "text": "Each lab replication transplants not just a static knowledge snapshot but the compounding knowledge engine itself \u2014 new labs inherit the self-reinforcing mechanism where each design cycle amplifies the methodology, meaning replicated sites accelerate rather than merely persist.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "compounding-design-knowledge",
+            "reproducible-lab-blueprint"
+          ],
+          "outlist": [],
+          "label": "Blueprint includes the compounding mechanism, so replication copies the ability to grow, not just current state"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "insufficient"
+      }
+    },
+    "concept-to-product-chain": {
+      "text": "Complete mechatronic workstation (digital through motion), fabrication-to-product pipeline (print through mount), and rapid iteration capability (stock hardware, reliable FDM) form an unbroken chain from initial concept to testable product within a single lab session",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "complete-mechatronic-workstation",
+            "fabrication-to-product-pipeline",
+            "rapid-iteration-capability"
+          ],
+          "outlist": [],
+          "label": "three depth-2 capabilities chain end-to-end from CAD screen to assembled product"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "consumable-infrastructure": {
+      "text": "Tubing, adhesives, push-fit connectors, and expanded PVC form a consumable materials infrastructure \u2014 inexpensive supplies that become structural or functional elements through established fabrication methods.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "tubing-supply",
+            "bonding-philosophy",
+            "push-fit-connectors",
+            "expanded-pvc"
+          ],
+          "outlist": [],
+          "label": "Four consumable categories function as design primitives not just expendables"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "convergent-open-engineering-apex": {
+      "text": "The franchisable open engineering model (scalable paradigm + reproducible blueprint) combined with compounding reproducible knowledge (self-reinforcing knowledge engine transplanted to new labs) suggests that each new franchise site has the potential to not just replicate but accelerate the network \u2014 the mechanism by which new labs inherit the compounding knowledge engine means knowledge can compound across sites, not just within them, though the degree of cross-site acceleration depends on factors beyond the model itself.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "franchisable-open-engineering-model",
+            "compounding-reproducible-knowledge"
+          ],
+          "outlist": [],
+          "label": "Depth-7 \u2014 franchise replication + compounding knowledge = network-level knowledge acceleration"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
     },
     "cordless-power-adapters": {
       "text": "Four 3D-printed adapters customize power delivery for 18V DC power tools: battery terminal (access power), battery dummy (deliver power to tool), battery rack (affix battery), and battery jig (affix tool). All published on grabCAD.",
@@ -164,6 +539,100 @@
       "date": "",
       "metadata": {}
     },
+    "demonstrated-breadth-and-institutional-bridge": {
+      "text": "The project portfolio's demonstrated breadth (six physical domains) and depth (complete SCUTTLE ecosystem), combined with university institutional backing and open documentation channels, creates a credible track record that spans domains AND is transparently documented through an institutional-open model",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "project-breadth-and-depth",
+            "institutional-open-bridge"
+          ],
+          "outlist": [],
+          "label": "Two unused depth-2 leaf conclusions; breadth proves the methodology works across domains, the institutional bridge proves it's credible and accessible \u2014 together they demonstrate transferable impact"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "dfm-operationalized": {
+      "text": "The abstract DFM discipline (integrating manufacturing constraints into design) is concretely realized through codified FDM design rules, ABS material selection, and reliability-focused tooling \u2014 closing the gap between DFM theory and daily practice",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "glossary-dfm",
+            "fdm-manufacturing-system"
+          ],
+          "outlist": [],
+          "label": "Connects the glossary definition to its operational implementation; validates that the lab practices what it preaches on design-for-manufacturing"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "digital-workspace-system": {
+      "text": "A digital workspace for CAD, documentation, and media built on a professional-grade AMD workstation, curated open-source software stack, and standardized PDF manual archival.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "software-stack",
+            "pc-workstation",
+            "manuals-format"
+          ],
+          "outlist": [],
+          "label": "hardware + software + archival format = digital counterpart to physical lab"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "digitally-integrated-professional-facility": {
+      "text": "The digital workspace system (CAD, documentation, media workstation), the safety-organized professional workspace, and the open documentation pipeline together provide the infrastructure for digital-physical integration \u2014 physical work can be documented and published digitally, and digital designs can inform physical work, though the degree of seamlessness depends on workflow practices not captured here.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "digital-workspace-system",
+            "complete-professional-workspace",
+            "open-documentation-pipeline"
+          ],
+          "outlist": [],
+          "label": "Elevates the orphaned digital-workspace-system by connecting it through the professional workspace to documentation"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
     "din-rail-designs": {
       "text": "Multiple 3D-printable DIN rail brackets published on grabCAD: DIN-spring (clip-on), tube clamp (round pole attachment), minimal-pi-bracket (15-min print Raspberry Pi holder), DIN-rail-pivot (end-to-end bending \u00b190\u00b0), compliant brackets (built-in springs), handy-mount (electrical box mounting).",
       "truth_value": "IN",
@@ -184,6 +653,77 @@
       "date": "",
       "metadata": {}
     },
+    "disciplined-efficient-design": {
+      "text": "Toyota's pull-based worry mitigation (design toward actual user needs, not hypothetical problems) constrains the systematic design methodology (PRL stages, continuous improvement, distributor-partnered research) to avoid wasted effort, while the systematic methodology ensures that real problems are addressed rigorously \u2014 producing a design practice that is simultaneously disciplined and efficient, neither over-engineering speculative features nor under-engineering real requirements.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "worry-mitigated-design",
+            "systematic-design-methodology"
+          ],
+          "outlist": [],
+          "label": "depth-3 \u2014 worry mitigation (d2) provides efficiency constraint on systematic methodology (d2) = rigorous without waste"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "disciplined-rapid-manufacturing": {
+      "text": "Toyota pull-based design discipline constraining manufacturing-aware rapid prototyping means each iteration is efficiently targeted at actual user needs and production-ready from inception \u2014 speed without waste.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "disciplined-efficient-design",
+            "production-conscious-rapid-prototyping"
+          ],
+          "outlist": [],
+          "label": "Pull-based worry mitigation prevents premature prototyping while DFM-operationalized rapid iteration ensures manufacturing readiness"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "documentation-quality-standards": {
+      "text": "A cohesive set of documentation artifact standards \u2014 accessibility trails linking media to source pages, optimized image formats (JPG, square), file size limits (25MB), and criteria for when a design warrants full project status",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "meta-accessibility",
+            "meta-images",
+            "meta-file-size",
+            "meta-project-vs-part"
+          ],
+          "outlist": [],
+          "label": "Four meta-conventions that collectively govern how documentation artifacts are structured, formatted, and classified"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
     "dupont-connectors": {
       "text": "Dupont style connectors are the standard for removable cable ends in DIY electronics. Used for all generic functional cables. Other connector types only needed for water resistance, shock/vibration, heat, or specialty conditions.",
       "truth_value": "IN",
@@ -193,6 +733,55 @@
       "source_hash": "",
       "date": "",
       "metadata": {}
+    },
+    "durable-self-documenting-knowledge": {
+      "text": "Fabrication outputs that automatically flow into documentation (printed parts photographed, CAD exported, processes recorded) combined with Toyota-backed resilient knowledge infrastructure (standardized, excellence-driven, survivable) ensures that self-documentation isn't just happening but is durable \u2014 knowledge captured today will be findable and usable after personnel changes",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "self-documenting-fabrication",
+            "resilient-knowledge-infrastructure"
+          ],
+          "outlist": [],
+          "label": "Self-documenting fabrication captures knowledge; resilient infrastructure ensures it persists \u2014 addressing the temporal dimension that neither alone covers"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "education-community-ecosystem": {
+      "text": "OpenLab bridges academic and maker communities through an open sharing model, a free ME curriculum, 400+ YouTube videos, and a Discord server \u2014 forming a self-reinforcing education ecosystem.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "openlab-mission",
+            "project-openme",
+            "community-youtube",
+            "community-discord",
+            "openlab-open-model"
+          ],
+          "outlist": [],
+          "label": "Five outreach channels create a feedback loop between experts and learners"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
     },
     "electronics-bin-org": {
       "text": "Electronics are organized in action-based bins that survived 3-8 years without label changes: actuators, battery, connectors, DIN rail, dupont, LED lights, MCU, pigtail, sensors (2 bins), servos, solder, switches, terminals. ~1,000 small decisions keep inventory manageable without adding bins.",
@@ -214,6 +803,78 @@
       "date": "",
       "metadata": {}
     },
+    "electronics-prototyping-platform": {
+      "text": "A complete electronics prototyping platform spans action-organized bins, DIN rail power infrastructure, standard Dupont connectors, and low-cost MCU boards \u2014 covering component selection through wired assembly.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "din-rail-electronics",
+            "electronics-bin-org",
+            "electronics-key-devices",
+            "dupont-connectors",
+            "mcu-boards"
+          ],
+          "outlist": [],
+          "label": "Five layers cover the full electronics prototyping workflow"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "empirically-grounded-open-methodology": {
+      "text": "The multi-domain project portfolio empirically validates the systematic methodology while fabrication outputs automatically document themselves \u2014 creating a methodology that is both proven by diverse application AND self-evidencing through its own documentation pipeline",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "portfolio-validated-methodology",
+            "self-documenting-fabrication"
+          ],
+          "outlist": [],
+          "label": "Two unused depth-3 leaf conclusions; portfolio-validation proves the methodology works, self-documentation proves it's visible \u2014 together they make the case for the methodology self-substantiating"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "empirically-reproducible-methodology": {
+      "text": "The empirically validated methodology embedded within the reproducible lab blueprint means new lab replications inherit methodology proven through actual multi-domain output \u2014 replicators receive demonstrated practices rather than theoretical prescriptions.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "empirically-grounded-open-methodology",
+            "reproducible-lab-blueprint"
+          ],
+          "outlist": [],
+          "label": "Blueprint transfers proven methodology, not just documented infrastructure \u2014 validation travels with replication"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
     "emt-conduit": {
       "text": "EMT (Electrical Metallic Conduit) at 1/2 and 3/4 inch trade sizes are integrated with other OpenLab supplies. Soft steel grade, stronger than aluminum but not structural steel. Takes paint readily, easily drilled, shaped with carbide burr, thick enough to tap holes.",
       "truth_value": "IN",
@@ -224,11 +885,84 @@
       "date": "",
       "metadata": {}
     },
+    "engineering-design-vocabulary": {
+      "text": "A precise engineering vocabulary \u2014 DFM integration, SMART targets, CTF identification, GD&T language, and TDP documentation standards \u2014 provides the shared language underlying the lab's systematic methodology",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "glossary-dfm",
+            "glossary-smart",
+            "glossary-ctf",
+            "glossary-gdt",
+            "glossary-tdp"
+          ],
+          "outlist": [],
+          "label": "Five glossary terms define methodology concepts that are operationalized elsewhere in the network but never formally connected"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "environmental-control-system": {
+      "text": "The lab actively manages environmental conditions through humidity monitoring, moisture absorbers, HEPA air filtration, and climate-controlled storage drawers \u2014 protecting sensitive instruments and materials from degradation.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "corrosion-control",
+            "air-filtration",
+            "toolbox-3"
+          ],
+          "outlist": [],
+          "label": "Three environmental controls protect lab assets from climate damage"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
     "expanded-pvc": {
       "text": "Expanded PVC (PVC foam) is a preferred panel material. Tips: choose 6mm thickness, mark with pencil, cut with utility knife, bond using PVC cement with nearly any other material.",
       "truth_value": "IN",
       "justifications": [],
       "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "exportable-lab-methodology": {
+      "text": "Systematic design methodology combined with operational excellence and an open documentation pipeline creates a transferable lab-setup methodology \u2014 a complete, publishable system for replicating engineering labs elsewhere \u2014 gated on resolving institutional documentation and communication gaps.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "systematic-design-methodology",
+            "operational-excellence-framework",
+            "open-documentation-pipeline"
+          ],
+          "outlist": [
+            "tamu-communication"
+          ],
+          "label": "The methodology, organization, and documentation are all documented and open, but institutional communication gaps prevent packaging them for export"
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -243,6 +977,30 @@
       "source_hash": "",
       "date": "",
       "metadata": {}
+    },
+    "fabrication-to-product-pipeline": {
+      "text": "The lab operates a complete fabrication-to-product pipeline: reliable FDM printing produces parametric designs that mount directly into a four-standard structural ecosystem via codified design rules.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "fdm-manufacturing-system",
+            "printegration-design-library",
+            "modular-mounting-ecosystem"
+          ],
+          "outlist": [],
+          "label": "printed parametric parts + structural beams + design rules = closed-loop physical fabrication"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
     },
     "fastener-strategy": {
       "text": "Fastener inventory strategy: eliminate less-common sizes but maintain ability to produce them. Example: stock only 30mm and 40mm lengths, cut 40mm down to 35mm when needed. Prefer standard sizes in designs to keep inventory simpler. M2.5 and M6 are the default small and large fasteners.",
@@ -268,6 +1026,31 @@
         "example": "Rule 5 (one invention per design): If you want to design a mobile robot with 4 mechanum wheels, you should start with an already validated robot having ordinary wheels. You cannot validate two unknowns in the same build. The mechanum wheels are one unknown; the chassis is another. Validate the chassis first with known wheels, then swap in the mechanum wheels as the single new variable."
       }
     },
+    "fdm-manufacturing-system": {
+      "text": "FDM 3D printing operates as a first-class manufacturing process with codified design rules, a preferred material (ABS), and reliability-focused tooling rather than hobbyist experimentation.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "printegrate-concept",
+            "fdm-design-rules",
+            "printing-setup",
+            "deferred-abs-material"
+          ],
+          "outlist": [],
+          "label": "Design rules plus material choice plus tooling equals manufacturing discipline"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "unnecessary"
+      }
+    },
     "fiberglass-rebar": {
       "text": "Pinkbar and Greenbar (fiberglass rebar) have amazing compatibility with superglue and 3D printing. Cut with carbide and diamond blades. Spray clear poly lacquer after cutting to prevent itching from fiberglass.",
       "truth_value": "IN",
@@ -277,6 +1060,54 @@
       "source_hash": "",
       "date": "",
       "metadata": {}
+    },
+    "finished-product-fabrication-chain": {
+      "text": "The surface finishing processes (paint, polish, woodwork fixtures) combined with the fabrication-to-product-pipeline (FDM through mounting) complete the full manufacturing chain \u2014 raw materials are not just shaped and assembled but finished to product-grade appearance.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "surface-finishing-processes",
+            "fabrication-to-product-pipeline"
+          ],
+          "outlist": [],
+          "label": "Integrates the orphaned surface-finishing into the main fabrication pipeline"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "fluid-pneumatic-infrastructure": {
+      "text": "Tubing, push-fit connectors, the RO filter system, and the OpenAir project form a fluid and pneumatic infrastructure that spans purified water, pressurized air, and general fluid routing.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "tubing-supply",
+            "push-fit-connectors",
+            "ro-filter",
+            "project-openair"
+          ],
+          "outlist": [],
+          "label": "common tubing + push-fit connectors + water purification + air project = fluid subsystem"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
     },
     "flush-cutter-rec": {
       "text": "Recommended flush cutters: IGAN 330 model. Hardware store cutters are too bulky and imprecise; stamped steel cutters bend out of alignment with one forceful cut.",
@@ -288,11 +1119,152 @@
       "date": "",
       "metadata": {}
     },
+    "franchisable-open-engineering-model": {
+      "text": "The scalable open engineering paradigm (production-ready designs feeding a self-reinforcing educational factory) combined with the reproducible lab blueprint (systematically documented methodology with concrete tooling specifications) constitutes a franchisable engineering model \u2014 any motivated lab can replicate both the methodology and the physical infrastructure from published documentation alone.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "open-engineering-paradigm",
+            "reproducible-lab-blueprint"
+          ],
+          "outlist": [],
+          "label": "depth-6 \u2014 paradigm scalability (d5) + blueprint reproducibility (d5) = franchise-capable model"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "franchise-deployment-ready": {
+      "text": "The franchisable open engineering model is actually deployable to new sites \u2014 new labs can begin replication with confidence that the source methodology is complete and the design library is sufficient.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "open-engineering-paradigm",
+            "reproducible-lab-blueprint"
+          ],
+          "outlist": [
+            "tamu-communication",
+            "open-items",
+            "printegrate-problems"
+          ],
+          "label": "depth-6 gated \u2014 franchise exists conceptually but deployment is blocked until communication gaps are resolved, open design items are completed, and printegration maturity issues are addressed"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "full-lifecycle-knowledge-capture": {
+      "text": "The research-to-education pipeline and the concept-to-product chain together support a lifecycle knowledge capture process: research outputs can feed into educational materials through the dissemination loop, while the concept-to-product chain enables rapid progression from idea to testable artifact \u2014 creating conditions where outputs from one stage can serve as inputs to the next, though the degree of integration between these two chains is not specified by the evidence.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "research-to-education-pipeline",
+            "concept-to-product-chain"
+          ],
+          "outlist": [],
+          "label": "Research feeds product chain feeds education \u2014 lifecycle closure at depth-4"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "full-spectrum-fabrication": {
+      "text": "Parametric fabrication (FDM, metalwork, blended automation), structural integration primitives (fiberglass rebar, stamped boxes), and consumable materials infrastructure (tubing, adhesives, PVC) cover the full material spectrum from polymers through composites to metals with reproducible processes",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "parametric-fabrication-ecosystem",
+            "structural-integration-standards",
+            "consumable-infrastructure"
+          ],
+          "outlist": [],
+          "label": "three fabrication layers span the full range of lab-accessible materials and processes"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "full-stack-hardware-realized": {
+      "text": "The glossary's \"full-stack hardware developer\" concept is operationally realized: one person can design (CAD workstation), build (fabrication pipeline), verify (mechatronic test infrastructure), and publish (documentation pipeline) a complete hardware product",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "complete-mechatronic-workstation",
+            "fabrication-to-product-pipeline",
+            "open-documentation-pipeline"
+          ],
+          "outlist": [
+            "open-items"
+          ],
+          "label": "the full-stack vision holds only when all open design gaps are resolved \u2014 incomplete CV joints, pen plotters, and other open items represent missing links in the chain"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
     "github-for-mes": {
       "text": "Mission: teach mechanical experts minimal online functions to document designs on GitHub without forcing Linux/CLI learning. Docsify-This by Paul Hibbits was a game changer \u2014 omits 95% of GitHub learning requirements. Goal: raise from 10% to 95% of designers having time to learn and repeat the documentation process.",
       "truth_value": "IN",
       "justifications": [],
       "source": "invent.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "globally-deployable-engineering-standard": {
+      "text": "The empirically reproducible methodology (validated methods embedded in reproducible blueprints) combined with the knowledge-preserving open paradigm (documentation scales without degradation) constitutes a globally deployable engineering standard \u2014 a complete, self-maintaining system any institution can adopt.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "empirically-reproducible-methodology",
+            "knowledge-preserving-open-paradigm"
+          ],
+          "outlist": [
+            "tamu-communication",
+            "printegrate-problems",
+            "open-items"
+          ],
+          "label": "Depth-7 gated \u2014 all three blockers must resolve before the system is ready for global deployment"
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -462,6 +1434,383 @@
       "date": "",
       "metadata": {}
     },
+    "holistic-workspace-environment": {
+      "text": "Environmental controls and maintenance infrastructure (wash station, HEPA filtration, humidity monitoring, surface finishing) combined with the safety-organized workspace (color-coded PPE, calculated lighting, multi-layered physical organization, MOLLE/labeling) form a holistic workspace management system that treats human factors, material preservation, and workflow efficiency as integrated concerns rather than separate checklists.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "lab-environment-and-maintenance",
+            "safety-organized-workspace"
+          ],
+          "outlist": [],
+          "label": "depth-3 \u2014 environment/maintenance layer (d2) + safety/organization layer (d2) = workspace-as-system rather than workspace-as-collection"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "innovation-culture-vocabulary": {
+      "text": "Novel vocabulary capturing OpenLab's design culture \u2014 printegration as method, full-stack hardware developer as role, FOOST and worry as anti-patterns, and AM as the enabling technology class",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "glossary-printegrate",
+            "glossary-full-stack-hw",
+            "glossary-foost",
+            "glossary-worry",
+            "glossary-am"
+          ],
+          "outlist": [],
+          "label": "Five coined or reframed terms that define OpenLab's distinctive intellectual contributions beyond standard engineering terminology"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "institutional-bridge-active": {
+      "text": "The lab actively bridges university infrastructure and open maker community \u2014 institutional credibility validates the work while open documentation makes it accessible \u2014 functioning as a two-way knowledge conduit between academia and independent practitioners",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "institutional-context",
+            "education-community-ecosystem",
+            "scalable-educational-platform"
+          ],
+          "outlist": [
+            "tamu-communication"
+          ],
+          "label": "the bridge functions only while the institutional side maintains adequate documentation and communication \u2014 ETID's communication gaps currently prevent the academic end from fully participating"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "institutional-context": {
+      "text": "David Malawey operates within Texas A&M ETID as a Technical Lab Coordinator, bringing university infrastructure and a decade of institutional context to OpenLab's development.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "tamu-context",
+            "tamu-role",
+            "openlab-author"
+          ],
+          "outlist": [],
+          "label": "person + institution + role = the human and organizational origin of OpenLab"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "institutional-independence-through-documentation": {
+      "text": "OpenLab's self-documenting practices and self-sustaining model create knowledge infrastructure structurally independent of any single institution, remaining viable even when institutional support is withdrawn.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "durable-self-documenting-knowledge",
+            "self-sustaining-lab-model"
+          ],
+          "outlist": [],
+          "label": "Durable knowledge + self-sustaining operations = autonomy from any host institution"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "institutional-open-bridge": {
+      "text": "University institutional context provides infrastructure, credibility, and long-term stability while the open documentation pipeline and community ecosystem make lab knowledge accessible far beyond academia \u2014 bridging two worlds that rarely connect",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "institutional-context",
+            "open-documentation-pipeline",
+            "education-community-ecosystem"
+          ],
+          "outlist": [],
+          "label": "institutional backing plus open publishing creates a credible bridge between academia and the maker community"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "institutionally-anchored-knowledge-paradigm": {
+      "text": "The institutionally validated portfolio (university credibility backing the multi-domain methodology) combined with the knowledge-preserving open paradigm (documentation practices embedded in the paradigm itself) means the open engineering approach carries both academic authority and self-preserving documentation practices.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "institutionally-validated-portfolio",
+            "knowledge-preserving-open-paradigm"
+          ],
+          "outlist": [],
+          "label": "Bridges institutional credibility with knowledge preservation \u2014 academic validation of a self-sustaining knowledge system"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "institutionally-validated-portfolio": {
+      "text": "University institutional credibility validates the portfolio-demonstrated methodology with academic authority, while the multi-domain portfolio proves the methodology works across real engineering domains \u2014 double validation through both institutional standing and empirical breadth.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "demonstrated-breadth-and-institutional-bridge",
+            "portfolio-validated-methodology"
+          ],
+          "outlist": [],
+          "label": "Academic institutional bridge provides credibility dimension distinct from portfolio's empirical validation"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "unnecessary"
+      }
+    },
+    "integrated-fluidics-mechatronics-capability": {
+      "text": "Fluid/pneumatic infrastructure combined with the robotics actuation cluster extends OpenLab's domain beyond pure electronics and mechanics into pressure-driven and fluidic control systems",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "fluid-pneumatic-infrastructure",
+            "robotics-actuation-cluster"
+          ],
+          "outlist": [],
+          "label": "tubing + push-fit + RO + OpenAir combined with actuator taxonomy (heat/pressure/motion across solids/liquids/gases) = capability for soft robotics, pneumatic grippers, and fluidic actuation"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "knowledge-dissemination-loop": {
+      "text": "A closed-loop knowledge system digitizes physical work through a scan-export-publish pipeline, then distributes it via open educational channels and community platforms back to hands-on practitioners.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "open-documentation-pipeline",
+            "education-community-ecosystem"
+          ],
+          "outlist": [],
+          "label": "documentation pipeline feeds community channels which drive new physical work"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "knowledge-preserving-open-paradigm": {
+      "text": "OpenLab's open engineering paradigm has a built-in mechanism that supports scaling without significant knowledge degradation: fabrication outputs flow automatically into durable documentation, and Toyota-backed knowledge infrastructure makes that documentation resilient to personnel changes \u2014 so new contributors can inherit and improve designs through the paradigm's self-documenting practices rather than relying on separate documentation efforts.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "open-engineering-paradigm",
+            "durable-self-documenting-knowledge"
+          ],
+          "outlist": [],
+          "label": "Depth-6 \u2014 the growth loop (D5) combined with durable self-documenting knowledge (D4) yields quality-preserving scale, a property neither claims alone"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "lab-environment-and-maintenance": {
+      "text": "The wash station, environmental control system, and surface finishing processes collectively address cleanliness, climate management, and finish quality in the lab \u2014 suggesting that maintaining controlled conditions and material integrity is treated as an operational priority alongside primary fabrication.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "station-wash",
+            "environmental-control-system",
+            "surface-finishing-processes"
+          ],
+          "outlist": [],
+          "label": "Depth-2 \u2014 links wash station to environmental controls and surface processes"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "lab-organization-infrastructure": {
+      "text": "Military modularity standards (MOLLE), systematic labeling, stamped electrical boxes, and the admin scanning station form a physical organization layer complementary to the existing storage hierarchy",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "molle-integration",
+            "admin-labeler",
+            "handybox-integration",
+            "station-admin"
+          ],
+          "outlist": [],
+          "label": "MOLLE provides modular mounting for soft goods, labeler enables 5S identification, handyboxes provide electrical mounting, scanner digitizes physical records \u2014 a second organizational layer beyond bins and shelves"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "lab-replication-ready": {
+      "text": "The OpenLab model is ready for institutional replication \u2014 open documentation pipeline, community ecosystem, and explicit mission to bridge academia and makers provide a complete blueprint.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "education-community-ecosystem",
+            "open-documentation-pipeline",
+            "openlab-mission"
+          ],
+          "outlist": [
+            "tamu-communication"
+          ],
+          "label": "replication requires that the institutional integration path is proven, not blocked by communication gaps"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "lab-safety-ergonomics": {
+      "text": "Lab safety and ergonomics are addressed through station-assigned color-coded safety glasses, purpose-selected glove types, and calculated lighting density exceeding 1k lumens per square meter.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "safety-glasses-color",
+            "glove-selection",
+            "lighting-design"
+          ],
+          "outlist": [],
+          "label": "PPE selection + station assignment + environmental lighting = safety system"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "lab-services-infrastructure": {
+      "text": "Dedicated utility stations (wash, charge) providing shared services combined with the physical organization infrastructure (MOLLE modularity, Dymo labeling, handybox integration, admin scanning) form a lab services layer \u2014 infrastructure that supports all domain-specific workstations without belonging to any single workflow, analogous to shared utilities in a building rather than equipment in a workshop.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "utility-station-infrastructure",
+            "lab-organization-infrastructure"
+          ],
+          "outlist": [],
+          "label": "depth-2 \u2014 shared utility stations (d1) + organization infrastructure (d1) = domain-independent services layer"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
     "lighting-design": {
       "text": "Lab lighting: 5 LED shop lights at 5000 lumens each for 330 sq ft space (~1k lumens per square meter recommended minimum). Installed upside-down oriented at ceiling to spread light, eliminate bright spots, and reduce harsh shadows. White-painted ceiling and walls enhance light distribution.",
       "truth_value": "IN",
@@ -522,6 +1871,28 @@
       "date": "",
       "metadata": {}
     },
+    "mature-validated-production-at-scale": {
+      "text": "The multi-domain production system (electronics, mechanics, fluids on shared standards producing production-ready outputs) is empirically validated by a diverse project portfolio spanning six physical domains with systematic methodology \u2014 a mature, proven production capability",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "multi-domain-production-system",
+            "portfolio-validated-methodology"
+          ],
+          "outlist": [
+            "printegrate-problems"
+          ],
+          "label": "Depth-5 apex conclusion paralleling open-engineering-paradigm but gated on manufacturing maturity; the three printegration problems (DFM knowledge gaps, modularity needs, adaptation challenges) are the specific blockers preventing this claim from going IN"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
     "mcu-boards": {
       "text": "MCU boards (Arduino, ESP8266, ESP32) are so inexpensive that a device including computing module, cables, sensors, and 3D printed enclosure costs less than the engineering time to write the software. Programs compiled via Arduino IDE with USB transmission.",
       "truth_value": "IN",
@@ -531,6 +1902,30 @@
       "source_hash": "",
       "date": "",
       "metadata": {}
+    },
+    "mechatronics-integration-platform": {
+      "text": "Electronics and mechanical subsystems converge on shared DIN rail and extrusion standards, enabling integrated mechatronics prototyping where power, sensing, and structure share a single mounting infrastructure.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "electronics-prototyping-platform",
+            "modular-mounting-ecosystem",
+            "benchtop-testing"
+          ],
+          "outlist": [],
+          "label": "electrical and mechanical domains unified by shared structural standards"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
     },
     "meta-accessibility": {
       "text": "Accessibility principles: images and attachments should offer a trail back to their webpage or project. Names, tags, and metadata all serve accessibility. Files not described in text should be excluded. Important images saved locally even if hosted online, for unified documentation when repo is downloaded.",
@@ -604,6 +1999,76 @@
       "date": "",
       "metadata": {}
     },
+    "methodology-amplified-design-ecosystem": {
+      "text": "When grounded in documented fabrication methods, the concept-to-product chain and multi-domain actuation platform together support an ecosystem where new parametric designs can draw on validated rules and cross-domain integration patterns, reducing \u2014 though not eliminating \u2014 the need to start from scratch.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "methodology-driven-fabrication",
+            "concept-to-product-chain",
+            "multi-domain-actuation-platform"
+          ],
+          "outlist": [],
+          "label": "Compounding design ecosystem \u2014 methodology + product chain + cross-domain scope = designs that build on each other"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "methodology-driven-fabrication": {
+      "text": "Systematic design methodology (PRL stages, Toyota continuous improvement, distributor-partnered research) applied to full-spectrum fabrication (parametric FDM, metalwork, structural integration, consumables) ensures that multi-material, multi-process fabrication follows structured progression rather than ad-hoc experimentation.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "systematic-design-methodology",
+            "full-spectrum-fabrication"
+          ],
+          "outlist": [],
+          "label": "Structured methodology governs the full fabrication capability \u2014 process discipline meets material breadth"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "methodology-transparent-integrated-facility": {
+      "text": "The complete integrated facility (full concept-to-product-to-motion capability) combined with precision-documented fabrication (terminologically rigorous artifact outputs) means the facility's entire production chain is inspectable and auditable through standardized documentation at every stage.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "complete-integrated-facility",
+            "precision-documented-fabrication"
+          ],
+          "outlist": [],
+          "label": "Bridges workspace completeness with documentation precision \u2014 the facility becomes self-auditing"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
     "methods-overview": {
       "text": "Methods cover engineering, fabricating, and building. Engineering = design, evaluation, benchmarking, parts-research, documentation. Fabricating = constructing parts from raw materials. Building = all technician-level activities. Methods are standard instructions applicable to multiple actions.",
       "truth_value": "IN",
@@ -614,6 +2079,32 @@
       "date": "",
       "metadata": {}
     },
+    "modular-mounting-ecosystem": {
+      "text": "A unified structural mounting system spans four beam standards (unistrut, 3030 extrusion, EMT conduit, DIN rail) with 3D-printed adapters bridging between them \u2014 any workspace can be reconfigured without permanent modification.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "beam-materials",
+            "din-rail-designs",
+            "emt-conduit",
+            "hanger-system",
+            "extrusion-sourcing"
+          ],
+          "outlist": [],
+          "label": "Four beam standards plus printed adapters yield infinite reconfigurability"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "unnecessary"
+      }
+    },
     "molle-integration": {
       "text": "MOLLE (military modular equipment standards) are being explored for lab organization since January 2025. The standardized clips, straps, grids, and hooks offer solutions for lab arrangement problems. Early-stage integration.",
       "truth_value": "IN",
@@ -623,6 +2114,151 @@
       "source_hash": "",
       "date": "",
       "metadata": {}
+    },
+    "multi-domain-actuation-platform": {
+      "text": "The mechatronics integration platform (electronics + mechanical on shared DIN/extrusion standards) combined with fluid/pneumatic infrastructure extends the lab's actuation capability across all three physical domains \u2014 electrical, mechanical, and fluidic \u2014 in a single integrated prototyping environment",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "mechatronics-integration-platform",
+            "integrated-fluidics-mechatronics-capability"
+          ],
+          "outlist": [],
+          "label": "merging mechatronics and fluidics creates a three-domain actuation platform unprecedented in a single lab"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "multi-domain-production-system": {
+      "text": "The multi-domain actuation platform (electronics, mechanics, fluids on shared DIN/extrusion standards) combined with production-ready research infrastructure (vendor-partnered, environmentally controlled) creates a system capable of producing research-grade prototypes that span all three physical domains.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "multi-domain-actuation-platform",
+            "production-ready-research-infrastructure"
+          ],
+          "outlist": [],
+          "label": "Multi-domain capability meets production readiness \u2014 depth-4 from two IN depth-3 nodes"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "multi-domain-project-portfolio": {
+      "text": "The six open-prefixed projects span fluid dynamics (OpenAir), robotics (OpenArm), containers (OpenBox), agriculture (OpenGrow), bearings (OpenSpin), and sealing/threading (OpenJar) \u2014 suggesting that the OpenLab approach may be applicable across multiple engineering disciplines rather than being tied to a single domain",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "project-openair",
+            "project-openarm",
+            "project-openbox",
+            "project-opengrow",
+            "project-openjar",
+            "project-openspin"
+          ],
+          "outlist": [],
+          "label": "breadth of project portfolio proves the lab methodology generalizes across engineering domains"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "multi-domain-prototyping-lab": {
+      "text": "The lab functions as a complete multi-domain prototyping facility \u2014 electrical, mechanical, and fluidic systems designed, fabricated, and integrated under one roof with shared structural standards",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "complete-mechatronic-workstation",
+            "integrated-fluidics-mechatronics-capability",
+            "fabrication-to-product-pipeline"
+          ],
+          "outlist": [
+            "printegrate-problems"
+          ],
+          "label": "three-domain prototyping holds only when the print-integration methodology is not itself blocked by unsolved DFM/modularity problems"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "open-documentation-pipeline": {
+      "text": "A complete physical-to-digital pipeline exists: scan documents, export CAD as STEP, host on GitHub, publish CAD on GrabCAD, and render as web pages via Docsify.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "tooling-docsify",
+            "grabcad-platform",
+            "github-for-mes",
+            "process-documentation",
+            "meta-cad-docs"
+          ],
+          "outlist": [],
+          "label": "Five tools form an end-to-end artifact-to-publication chain"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "unnecessary"
+      }
+    },
+    "open-engineering-paradigm": {
+      "text": "A scalable open hardware movement producing production-ready designs, combined with a self-reinforcing educational factory driven by Toyota discipline, constitutes a new engineering paradigm \u2014 openly documented, continuously improved, and self-propagating through education rather than proprietary licensing.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "scalable-open-hardware-movement",
+            "self-reinforcing-educational-factory"
+          ],
+          "outlist": [],
+          "label": "Capstone synthesis \u2014 both depth-4 conclusions share the self-sustaining flywheel; their union yields a complete paradigm where production readiness and educational resilience co-amplify"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
     },
     "open-items": {
       "text": "Open design projects seeking community help: CV joint (constant velocity joint, balls-in-cup, for open mop use case), perfect spool (printable, modular racking, wire dispensing), conveyor belt (needs redesign with latest design rules, fits SCUTTLE Robot), chamfer tool (parametric for PVC pipe), jigsaw rig, sander rig, modular ACME thread with steel ball reinforcement.",
@@ -654,6 +2290,30 @@
       "date": "",
       "metadata": {}
     },
+    "openlab-identity-and-mission": {
+      "text": "OpenLab's identity combines a specific technical focus (hands-on mechatronics) with a transformative purpose (changing the world through open documentation), defining both what it does and why.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "openlab-focus",
+            "openlab-purpose",
+            "openlab-mission"
+          ],
+          "outlist": [],
+          "label": "Depth-1 \u2014 groups three partially-connected identity beliefs into a coherent organizational identity"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
     "openlab-mission": {
       "text": "OpenLab is the world's first fully documented multidisciplinary engineering lab, bridging university-grade academics with real-world industrial expertise. The goal is to create the ultimate model lab by openly sharing exact tools, supplies, and methods for everything from traditional fabrication to modern robotics.",
       "truth_value": "IN",
@@ -684,6 +2344,55 @@
       "date": "",
       "metadata": {}
     },
+    "openlab-terminology-system": {
+      "text": "OpenLab maintains a unified terminology system spanning standard engineering terms, coined neologisms, and formal rating systems (PRL, responsitory), reflecting a culture that deliberately names its practices.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "glossary-prl",
+            "glossary-responsitory",
+            "engineering-design-vocabulary",
+            "innovation-culture-vocabulary"
+          ],
+          "outlist": [],
+          "label": "Depth-2 \u2014 ungrouped glossary terms extend the two existing vocabulary clusters into a unified system"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "operational-excellence-framework": {
+      "text": "Toyota production principles are concretely realized through standardized inventory, color-coded multi-layer organization, and sub-10-second retrieval \u2014 forming a measurable operational excellence framework.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "physical-organization-system",
+            "toyota-methodology-applied",
+            "standardization-strategy"
+          ],
+          "outlist": [],
+          "label": "Toyota philosophy operationalized through physical organization and deliberate standardization"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
     "otp-parts": {
       "text": "OTP (Off-The-Print) parts are parametric 3D printed designs with recurring instances. Each instance is unique but driven by refined parametric models. Similar to OTS (off-the-shelf) in being easy to grab-and-go, low cost, wide application, and globally available via grabCAD. Examples: hinges, mandrels (150+ lbs shear strength on EMT conduit), sleeves (superglue bonded to fiberglass rod).",
       "truth_value": "IN",
@@ -696,6 +2405,32 @@
         "example": "The hinge_V2 is used first on toolboxes for nested racks that add tool storage and convenient access. The same hinge is reused with adjusted geometry to connect the assembly that holds and displays datasheets for capturing videos. Each reuse gains a solution unavailable from off-the-shelf parts, with matching reliability and robustness, from engineering effort refined in the first copy."
       }
     },
+    "parametric-fabrication-ecosystem": {
+      "text": "Parametric 3D-printed designs (OTP parts) combined with multi-material processes and blended automation create a reproducible, scalable fabrication ecosystem beyond single-material prototyping",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "otp-parts",
+            "materials-3dprinting",
+            "materials-metalwork",
+            "blended-automation",
+            "process-fabrication"
+          ],
+          "outlist": [],
+          "label": "parametric design patterns + multiple material processes + Industry 4.0 automation = fabrication that scales from one-off to small-batch"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "unnecessary"
+      }
+    },
     "pc-workstation": {
       "text": "CAD workstation: AMD Ryzen 7 3700x, AMD Radeon Pro WX4100 GPU (chosen over RTX2060 for professional CAD \u2014 lower cost, lower power, better CAD performance), Samsung 980 Pro SSD, 32GB Corsair RAM, Corsair RM750x PSU.",
       "truth_value": "IN",
@@ -705,6 +2440,240 @@
       "source_hash": "",
       "date": "",
       "metadata": {}
+    },
+    "physical-organization-system": {
+      "text": "A multi-layered physical organization system \u2014 toolboxes, stations, storage hierarchy, and color coding \u2014 enables sub-10-second retrieval for any part or tool in the lab.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "tour-structure",
+            "color-code-system",
+            "station-concept",
+            "storage-supply-shelves",
+            "bin-hierarchy"
+          ],
+          "outlist": [],
+          "label": "Five organizational primitives combine into a retrieval-optimized system"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "unnecessary"
+      }
+    },
+    "portfolio-complete-design-ecosystem": {
+      "text": "The breadth of validated designs and multi-domain fabrication constitute a complete ecosystem sufficient for arbitrary mechatronic prototyping.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "project-breadth-and-depth",
+            "full-spectrum-fabrication",
+            "multi-domain-actuation-platform"
+          ],
+          "outlist": [
+            "open-items",
+            "printegrate-problems"
+          ],
+          "label": "Unfinished designs (CV joint, conveyor) and DFM/modularity problems prevent claiming ecosystem completeness"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "portfolio-validated-methodology": {
+      "text": "The multi-domain project portfolio (air, robotics, containers, agriculture, bearings, sealing) serves as empirical validation that the systematic design methodology generalizes across physical domains \u2014 six independent projects each progressing through the same PRL stages and Toyota-inspired improvement cycles.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "multi-domain-project-portfolio",
+            "systematic-design-methodology"
+          ],
+          "outlist": [],
+          "label": "Project portfolio is the evidence that the methodology isn't domain-specific \u2014 connects orphaned depth-1 node to depth-2"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "power-integrated-fabrication": {
+      "text": "The power tool ecosystem (Ridgid cordless tools, standardized 18650 cells, 3D-printed power adapters) integrated with the parametric fabrication ecosystem (OTP parts, multi-material processes, blended automation) creates a recursively self-improving fabrication system \u2014 the tools themselves are partially fabricated and customized by the system they support.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "power-tool-ecosystem",
+            "parametric-fabrication-ecosystem"
+          ],
+          "outlist": [],
+          "label": "Connects orphaned depth-1 node; captures the recursive property where fabrication customizes its own tooling"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "power-integrated-mechatronics": {
+      "text": "The power tool ecosystem integrated with parametric fabrication (a recursively self-improving fabrication system) and the full electronics-to-motion development pipeline (a unified mechatronic workstation) together form a workspace where power tools, printed parts, electronics, and actuators can potentially share common standards and design language \u2014 though the degree of actual standards convergence across these two systems is not yet established by the evidence.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "power-integrated-fabrication",
+            "complete-mechatronic-workstation"
+          ],
+          "outlist": [],
+          "label": "Both are unused leaf conclusions at depth-2; their union covers the full span from power tools through electronics to motion \u2014 the physical realization of \"full-stack hardware\""
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "power-tool-ecosystem": {
+      "text": "Ridgid lifetime-warranty cordless tools, standardized 18650 battery cells, and 3D-printed power adapters form a unified power tool ecosystem with custom-extended capabilities and guaranteed long-term support",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "ridgid-tools",
+            "cordless-power-adapters",
+            "battery-standard"
+          ],
+          "outlist": [],
+          "label": "warranty-backed tools plus custom adapters plus standard cells create a self-extending power platform"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "precision-documentation-framework": {
+      "text": "The unified terminology system (standard engineering terms, coined neologisms, formal rating systems) combined with documentation quality standards (accessibility trails, optimized formats, file size limits, project/part distinctions) creates a precision documentation framework \u2014 content that is both semantically precise (controlled vocabulary ensures consistent meaning) and technically consistent (artifact standards ensure findability and portability).",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "openlab-terminology-system",
+            "documentation-quality-standards"
+          ],
+          "outlist": [],
+          "label": "depth-3 \u2014 terminology precision (d2) + artifact quality (d1) = documentation that is both meaningful and well-formed"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "precision-documented-fabrication": {
+      "text": "The fabrication-to-documentation pipeline tends toward both automatic generation and terminological rigor \u2014 the self-documenting fabrication process produces artifacts that flow into a precision documentation framework with controlled vocabulary and artifact standards, reducing (though not eliminating) the usual tradeoff between documentation volume and semantic precision.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "precision-documentation-framework",
+            "self-documenting-fabrication"
+          ],
+          "outlist": [],
+          "label": "Precision standards applied to auto-generated fabrication documentation yield volume without sacrificing rigor"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "precision-documented-reproducible-lab": {
+      "text": "The precision documentation framework (rigorous terminology + quality standards) combined with the reproducible lab blueprint (transferable professional lab documentation) would mean lab replications inherit not just the physical setup but the precise terminological framework that makes documentation interoperable across sites.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "precision-documentation-framework",
+            "reproducible-lab-blueprint"
+          ],
+          "outlist": [
+            "printegrate-problems"
+          ],
+          "label": "Printegration problems block full documentation reproducibility since printegration is central to the fabrication pipeline"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "precision-engineered-production-pipeline": {
+      "text": "When the precision documentation framework (controlled vocabulary and artifact standards) is applied alongside the disciplined rapid manufacturing process (pull-based, DFM-aware prototyping), it supports production artifacts that are both manufacturing-aware and terminologically consistent \u2014 though the degree of optimization depends on how tightly the two practices are integrated in a given workflow.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "precision-documentation-framework",
+            "disciplined-rapid-manufacturing"
+          ],
+          "outlist": [],
+          "label": "Bridges terminology/precision branch with fabrication/manufacturing branch \u2014 documentation rigor constrains production outputs"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
     },
     "printegrate-bearings": {
       "text": "Printable bearing designs: full bearing with print-in-place geometry accepting many ball sizes/materials, parametric for custom ID/OD/width. BearingX has no inner race \u2014 steel balls run directly on shaft for higher strength. RollerBracket attaches OTS skate wheels to 3030 extrusion, validated 3+ years.",
@@ -751,6 +2720,55 @@
       "truth_value": "IN",
       "justifications": [],
       "source": "printegrate.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "printegration-design-library": {
+      "text": "A reusable library of parametric printegrated designs \u2014 bearings, hinges, sleeves, and power adapters \u2014 serves as modular building blocks that combine 3D printing with off-the-shelf components.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "printegrate-bearings",
+            "printegrate-hinges",
+            "printegrate-sleeves",
+            "cordless-power-adapters",
+            "vacuum-adapter"
+          ],
+          "outlist": [],
+          "label": "Five parametric design families form a composable parts catalog"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "unnecessary"
+      }
+    },
+    "printegration-mature": {
+      "text": "The printegration methodology is mature \u2014 a design library, codified FDM rules, and standard structural mounts provide a complete framework for print-integrated product design.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "printegration-design-library",
+            "fdm-manufacturing-system",
+            "modular-mounting-ecosystem"
+          ],
+          "outlist": [
+            "printegrate-problems"
+          ],
+          "label": "maturity claim gated on whether the three core problems (DFM, modularity, accessibility) are still active blockers"
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -816,6 +2834,32 @@
       "date": "",
       "metadata": {}
     },
+    "process-maturity-system": {
+      "text": "Project Readiness Levels combined with four distinct process stages (engineering, evaluation, prototyping, fabrication) enable systematic progression from concept to production",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "prl-standard",
+            "process-engineering",
+            "process-evaluation",
+            "process-prototyping",
+            "process-fabrication"
+          ],
+          "outlist": [],
+          "label": "PRL provides assessment gates while process categories provide the workflow stages \u2014 together they formalize what is otherwise ad-hoc progression through design maturity"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
     "process-prototyping": {
       "text": "Prototyping process: cut materials, access standard components, make permanent bonds, adjust material fit and finish, apply colors and textures, create airtight and watertight seals, generate custom CAD parts, fasten assemblies, clamp and shape materials.",
       "truth_value": "IN",
@@ -825,6 +2869,191 @@
       "source_hash": "",
       "date": "",
       "metadata": {}
+    },
+    "production-conscious-rapid-prototyping": {
+      "text": "Operationalized DFM (FDM design rules, ABS material selection, manufacturing-aware parametric design) combined with rapid iteration capability (standardized consumables, reliable printing, stock hardware assembly) means each prototype already embeds manufacturing constraints at the design stage \u2014 closing the prototype-to-production gap during iteration rather than as a post-hoc manufacturing review.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "dfm-operationalized",
+            "rapid-iteration-capability"
+          ],
+          "outlist": [],
+          "label": "depth-3 \u2014 DFM awareness (d2) + rapid iteration (d2) = prototypes that are production-conscious from the first print"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "production-ready-electronics": {
+      "text": "Electronics designs can transition from prototype to reliable, reproducible products using the fabrication pipeline and standardized components",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "electronics-prototyping-platform",
+            "fabrication-to-product-pipeline",
+            "standardization-strategy"
+          ],
+          "outlist": [
+            "printegrate-problems"
+          ],
+          "label": "production readiness requires DFM awareness, modularity, and willingness to adopt proven tooling \u2014 all three are explicitly identified as unsolved in printegrate-problems"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "production-ready-research-infrastructure": {
+      "text": "Operational excellence, complete fabrication pipeline, and rapid iteration capability together create infrastructure capable of transitioning research prototypes directly to small-batch production without a separate manufacturing setup",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "operational-excellence-framework",
+            "fabrication-to-product-pipeline",
+            "rapid-iteration-capability"
+          ],
+          "outlist": [],
+          "label": "Toyota-grade organization + end-to-end FDM-to-mount fabrication + fast iteration cycles = manufacturing-grade outputs emerging from a research context"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "production-systematic-at-manufacturing-scale": {
+      "text": "The lab's professional systematic fabrication practices are ready to support manufacturing-scale production beyond one-off prototyping.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "professionally-systematic-fabrication",
+            "operational-excellence-framework",
+            "dfm-operationalized"
+          ],
+          "outlist": [
+            "printegrate-problems"
+          ],
+          "label": "DFM knowledge gaps and interoperability issues directly undermine manufacturing-scale readiness"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "professional-research-infrastructure": {
+      "text": "Vendor-partnered research methodology combined with environmental controls (humidity, HEPA, climate-controlled storage) elevates the lab from hobbyist workspace to professional-grade research facility",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "research-methodology-system",
+            "environmental-control-system"
+          ],
+          "outlist": [],
+          "label": "expert-backed research practices + precision environmental management = research outputs with professional credibility and material reliability"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "professionally-maintained-workspace": {
+      "text": "The holistic workspace environment (environmental controls + safety organization) combined with lab services infrastructure (utility stations + organization layer) creates a professionally maintained workspace where environmental quality, safety, and shared services are systematically managed as first-class infrastructure.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "holistic-workspace-environment",
+            "lab-services-infrastructure"
+          ],
+          "outlist": [],
+          "label": "Connects two orphaned depth-2/3 nodes into a unified workspace-maintenance concept"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "professionally-systematic-fabrication": {
+      "text": "A professionally-equipped, safety-organized workspace (environmental controls, color-coded PPE, calculated lighting, vendor-grade infrastructure) combined with methodology-driven fabrication (PRL-staged, Toyota-disciplined, full-spectrum materials) creates a facility where every fabrication act occurs within both professional safety standards and systematic design methodology",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "complete-professional-workspace",
+            "methodology-driven-fabrication"
+          ],
+          "outlist": [],
+          "label": "Two unused depth-3 leaf conclusions \u2014 one covers workspace quality, the other covers fabrication discipline; neither alone captures the full picture of how work actually gets done in the lab"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "project-breadth-and-depth": {
+      "text": "The multi-domain project portfolio demonstrates breadth across six physical domains while the SCUTTLE ecosystem demonstrates depth through a complete robotics lifecycle (core designs, miniature variant, international university deployment) \u2014 together validating that the OpenLab methodology produces both exploratory diversity and production maturity.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "multi-domain-project-portfolio",
+            "scuttle-ecosystem"
+          ],
+          "outlist": [],
+          "label": "Breadth (6 domains) plus depth (design-to-deployment in one domain) validates methodology generality \u2014 connects orphaned depth-1 node"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
     },
     "project-openair": {
       "text": "OpenAir project: take control of air, pressure, and flow with open elements. Link: qr.net/openairproject",
@@ -948,11 +3177,173 @@
       "date": "",
       "metadata": {}
     },
+    "rapid-iteration-capability": {
+      "text": "Standardized consumables plus reliable FDM printing enable rapid design iteration \u2014 new prototypes can be printed, assembled with stock hardware, and connected with standard tubing and connectors in a single session.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "consumable-infrastructure",
+            "fdm-manufacturing-system",
+            "standardization-strategy"
+          ],
+          "outlist": [],
+          "label": "standardized stock + reliable printing + constrained fasteners = same-day prototyping"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
     "reference-materials": {
       "text": "Key engineering reference materials in the repo: NFPA70 electrical standards, Gates belt design guide, Koyo bearing guide, US Marines MOLLE equipment guide, Forest Products Lab wood handbook.",
       "truth_value": "IN",
       "justifications": [],
       "source": "invent.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "reproducible-lab-blueprint": {
+      "text": "OpenLab's combination of professionally systematic fabrication infrastructure with full-lifecycle knowledge capture creates a facility whose methodology and toolchains are documented end-to-end \u2014 providing a foundation that could serve as a reference for others seeking to establish similar fabrication capabilities.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "professionally-systematic-fabrication",
+            "full-lifecycle-knowledge-capture"
+          ],
+          "outlist": [],
+          "label": "Professional workspace + lifecycle knowledge capture = reproducible recipe, not just a well-run or well-documented lab"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "reproducible-mechatronics": {
+      "text": "OpenLab mechatronics projects can be fully replicated by external labs using published documentation and standardized components",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "mechatronics-integration-platform",
+            "electronics-prototyping-platform",
+            "open-documentation-pipeline",
+            "standardization-strategy"
+          ],
+          "outlist": [
+            "tamu-communication",
+            "printegrate-problems"
+          ],
+          "label": "replication requires both clear documentation channels (blocked by TAMU communication gaps) AND production-ready modular designs (blocked by DFM/modularity/FOOST issues) \u2014 a double gate"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "research-methodology-system": {
+      "text": "A systematic research methodology using distributors as expert partners, curated engineering reference materials, and a defined methods pipeline from evaluation through documentation.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "meta-research-approach",
+            "reference-materials",
+            "methods-overview"
+          ],
+          "outlist": [],
+          "label": "distributor expertise + reference standards + defined methods = repeatable research process"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "research-to-education-pipeline": {
+      "text": "Professional research infrastructure (vendor-partnered, environmentally controlled) feeds the scalable educational platform (SCUTTLE, open hardware) through the knowledge dissemination loop (scan-publish-distribute) \u2014 research outputs automatically become teaching materials without a separate documentation effort",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "professional-research-infrastructure",
+            "scalable-educational-platform",
+            "knowledge-dissemination-loop"
+          ],
+          "outlist": [],
+          "label": "the documentation loop converts research byproducts into educational content as a natural side effect"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "resilient-knowledge-infrastructure": {
+      "text": "Toyota-inspired operational excellence applied to the knowledge dissemination loop with explicit standardization ensures lab knowledge survives personnel turnover and scales beyond individual expertise",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "operational-excellence-framework",
+            "knowledge-dissemination-loop",
+            "standardization-strategy"
+          ],
+          "outlist": [],
+          "label": "Yokoten (horizontal knowledge transfer) + documentation pipeline + naming/interface standards = institutional memory independent of any individual contributor"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "resource-managed-fabrication-ecosystem": {
+      "text": "The tool and supply management philosophy (principled reusable/consumable distinction) combined with the storage design system (modular bin/rack/door storage) and the methodology-driven fabrication (systematic design applied to full-spectrum fabrication) means the fabrication ecosystem has deliberate resource lifecycle management \u2014 tools maintained, supplies replenished, everything retrievable.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "tool-and-supply-management-philosophy",
+            "storage-design-system",
+            "methodology-driven-fabrication"
+          ],
+          "outlist": [],
+          "label": "Integrates two orphans (tool philosophy + storage design) into the fabrication chain"
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -978,11 +3369,261 @@
       "date": "",
       "metadata": {}
     },
+    "robotics-actuation-cluster": {
+      "text": "Servo motors, the actuator taxonomy (heat/pressure/motion across solids/liquids/gases), and the OpenArm project define a robotics actuation cluster spanning classification, standard components, and a flagship application.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "servo-motors",
+            "actuators-taxonomy",
+            "project-openarm"
+          ],
+          "outlist": [],
+          "label": "actuator theory + standard servos + 10-year arm project = actuation design domain"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
     "safety-glasses-color": {
       "text": "Safety glasses are color-coded so each pair is assigned to a specific station. A slot at each workstation is marked with the same color, ensuring glasses return to their space.",
       "truth_value": "IN",
       "justifications": [],
       "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "safety-organized-workspace": {
+      "text": "Color-coded safety glasses, purpose-selected gloves, and calculated lighting combined with the multi-layered physical organization system and MOLLE/labeler/handybox infrastructure create a workspace that is simultaneously safe, ergonomic, and retrieval-optimized",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "lab-safety-ergonomics",
+            "physical-organization-system",
+            "lab-organization-infrastructure"
+          ],
+          "outlist": [],
+          "label": "safety and organization reinforce each other \u2014 a well-organized workspace is inherently safer and faster"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "scalable-educational-platform": {
+      "text": "The SCUTTLE robotics ecosystem, modular mounting standards, and education community form a platform designed for replication \u2014 open hardware that external universities can reproduce with standardized structural components",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "scuttle-ecosystem",
+            "modular-mounting-ecosystem",
+            "education-community-ecosystem"
+          ],
+          "outlist": [],
+          "label": "proven international deployment (Nigeria) + standardized mounting (extrusion/DIN/EMT) + active community = educational robotics designed for institutional adoption"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "scalable-knowledge-dissemination-to-institutions": {
+      "text": "OpenLab's documentation loop and educational pipeline can scale knowledge dissemination to other universities and institutions beyond the originating lab.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "knowledge-dissemination-loop",
+            "research-to-education-pipeline",
+            "scalable-educational-platform"
+          ],
+          "outlist": [
+            "tamu-communication"
+          ],
+          "label": "If the host institution cannot sustain internal documentation, the claim of scaling to other institutions is undermined at its source"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "scalable-open-hardware-movement": {
+      "text": "Production-ready research infrastructure (designs that can transition from prototype to product) combined with the self-sustaining community flywheel means the OpenLab model can scale beyond a single lab \u2014 producible designs attract replicators, replicators contribute improvements, improvements make designs more producible",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "production-ready-research-infrastructure",
+            "self-sustaining-lab-model"
+          ],
+          "outlist": [],
+          "label": "production readiness amplifies the community flywheel beyond a single lab into a replicable movement"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "scuttle-ecosystem": {
+      "text": "SCUTTLE spans core engineering designs, a miniature variant, and international university deployment \u2014 forming a complete robotics ecosystem from design through education.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "project-scuttle-tech",
+            "project-scuttle-mini",
+            "project-scuttle-nigeria"
+          ],
+          "outlist": [],
+          "label": "Three project branches cover design, scaling, and global deployment"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "self-correcting-methodology-validated": {
+      "text": "The empirically grounded methodology combined with full lifecycle knowledge capture should form a self-correcting system \u2014 lifecycle data reveals methodology gaps while empirical grounding ensures corrections are validated, closing the improvement loop \u2014 but this self-correction is only validated when the known printegration problems have been resolved through the system's own corrective processes.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "empirically-grounded-open-methodology",
+            "full-lifecycle-knowledge-capture"
+          ],
+          "outlist": [
+            "printegrate-problems"
+          ],
+          "label": "depth-5 gated \u2014 if the methodology truly self-corrects, printegration problems would have been resolved through it; their persistence indicates the correction loop has gaps that must close before the claim holds"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "self-documenting-fabrication": {
+      "text": "The fabrication-to-product pipeline produces physical artifacts that flow directly into the open documentation pipeline \u2014 printed parts photographed, CAD exported as STEP, published on GrabCAD and GitHub \u2014 creating a fabrication process that inherently generates its own technical documentation as a byproduct.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "fabrication-to-product-pipeline",
+            "open-documentation-pipeline"
+          ],
+          "outlist": [],
+          "label": "Fabrication outputs feed documentation inputs \u2014 the process of making things generates the record of how to make them"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "self-perpetuating-integrated-production-knowledge": {
+      "text": "The self-perpetuating knowledge institution (depth-7) combined with the complete integrated facility (depth-5) means the knowledge institution perpetuates not just abstract methodology but the full concrete production capability \u2014 from CAD through actuation \u2014 as an indivisible unit.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "self-perpetuating-knowledge-institution",
+            "complete-integrated-facility"
+          ],
+          "outlist": [],
+          "label": "Depth-8 \u2014 the self-perpetuating property extends beyond methodology to encompass the entire physical production pipeline"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "self-perpetuating-knowledge-institution": {
+      "text": "OpenLab constitutes a self-perpetuating knowledge institution \u2014 one that maintains and propagates itself through its own documentation practices regardless of host institution, personnel, or physical location \u2014 because knowledge preservation is embedded in the paradigm itself and the resulting knowledge infrastructure is structurally independent of any single institution.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "knowledge-preserving-open-paradigm",
+            "institutional-independence-through-documentation"
+          ],
+          "outlist": [],
+          "label": "depth-7 \u2014 paradigm-embedded documentation (d6) + institution-independent infrastructure (d5) = knowledge system that outlives any particular instance"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "self-reinforcing-educational-factory": {
+      "text": "The self-sustaining flywheel (fabrication \u2192 documentation \u2192 community \u2192 more fabrication) combined with Toyota-backed resilient knowledge infrastructure creates a system that simultaneously grows AND resists degradation \u2014 new contributors accelerate the flywheel while standardized practices prevent knowledge loss when contributors leave",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "self-sustaining-lab-model",
+            "resilient-knowledge-infrastructure"
+          ],
+          "outlist": [],
+          "label": "growth mechanism plus resilience mechanism yield anti-fragility \u2014 the system gets stronger under personnel turnover rather than weaker"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "self-sustaining-lab-model": {
+      "text": "Rapid fabrication feeds the knowledge dissemination loop which attracts community contributors who enable further iteration \u2014 a self-reinforcing flywheel where making, documenting, and teaching amplify each other",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "rapid-iteration-capability",
+            "knowledge-dissemination-loop",
+            "education-community-ecosystem"
+          ],
+          "outlist": [],
+          "label": "rapid prototyping produces artifacts \u2192 documentation pipeline publishes them \u2192 community engagement attracts contributors \u2192 contributors accelerate iteration = positive feedback loop"
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -1035,6 +3676,51 @@
       "truth_value": "IN",
       "justifications": [],
       "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "soldering-workflow-system": {
+      "text": "A complete soldering workflow with deliberate scope boundaries (through-hole only), recommended portable irons (Pinecil/TS100), a DIN-rail-mounted station with power monitoring, and a dedicated supply box.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "solder-scope",
+            "soldering-iron-rec",
+            "station-solder",
+            "toolbox-5"
+          ],
+          "outlist": [],
+          "label": "scoped tooling + recommended equipment + dedicated station + organized supplies"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "standardization-strategy": {
+      "text": "The lab enforces deliberate standardization across fasteners, wiring, batteries, and structural beams \u2014 constraining choices to maximize interoperability and minimize inventory.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "fastener-strategy",
+            "wire-gauge-standard",
+            "battery-standard",
+            "beam-materials",
+            "bin-hierarchy"
+          ],
+          "outlist": [],
+          "label": "Convergent constraint pattern across five independent supply domains"
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -1102,6 +3788,27 @@
       "date": "",
       "metadata": {}
     },
+    "storage-design-system": {
+      "text": "Purpose-built modular storage designs \u2014 DIN-rail bin racks on 3030 extrusion, constrained door storage for tall items, and priority-marked hardware bins \u2014 encode retrieval speed and ergonomic constraints directly into physical structure",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "storage-binrack",
+            "storage-doors",
+            "storage-hardware-bins"
+          ],
+          "outlist": [],
+          "label": "Three storage beliefs detail specific designs rather than the organizational philosophy already captured in physical-organization-system"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
     "storage-doors": {
       "text": "Doors are used for tall item storage. Design constraints: limited items to avoid overloading door hinges, all items must be fixed in all axes to prevent falling when door swings.",
       "truth_value": "IN",
@@ -1132,6 +3839,68 @@
       "date": "",
       "metadata": {}
     },
+    "structural-integration-standards": {
+      "text": "Fiberglass rebar and stamped electrical boxes serve as cross-domain structural primitives that integrate with 3D printing, establishing reusable integration patterns across mechanical and electrical assemblies",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "fiberglass-rebar",
+            "handybox-integration",
+            "materials-3dprinting"
+          ],
+          "outlist": [],
+          "label": "both are inexpensive commodity materials that become structural building blocks when combined with printed adapters \u2014 a pattern distinct from the beam/extrusion mounting ecosystem"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "surface-finishing-processes": {
+      "text": "Secondary fabrication processes \u2014 paint/polish for controlled appearance and woodwork for fixture construction \u2014 complement primary manufacturing (FDM, metalwork) by addressing finish quality and support structure needs",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "materials-paint",
+            "materials-woodwork"
+          ],
+          "outlist": [],
+          "label": "Two orphaned material process beliefs that extend fabrication beyond functional geometry into appearance and support"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "systematic-design-methodology": {
+      "text": "Process maturity levels (PRL) provide staged progression from concept to production, Toyota methodology provides continuous improvement discipline, and vendor-partnered research provides expert-informed starting points \u2014 together forming a complete design methodology from first principles through fielded product",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "process-maturity-system",
+            "toyota-methodology-applied",
+            "research-methodology-system"
+          ],
+          "outlist": [],
+          "label": "staged progression plus kaizen discipline plus expert-informed research yields a complete design methodology"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
     "tamu-communication": {
       "text": "TAMU ETID department has severe documentation and communication gaps: no documents meeting criteria of routine updates, traceability, multi-author input, correction pathways, accessible storage, and weekly active use. This means 100-year institutional history is rendered impotent.",
       "truth_value": "IN",
@@ -1157,6 +3926,28 @@
       "truth_value": "IN",
       "justifications": [],
       "source": "printegrate.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "tool-and-supply-management-philosophy": {
+      "text": "OpenLab distinguishes reusable tools from consumable supplies as an organizing principle, with principled tool selection (e.g., flush cutters chosen for precision over bulk) driven by workspace ergonomics.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "tools-vs-supplies",
+            "flush-cutter-rec",
+            "consumable-infrastructure",
+            "workspace-toolbox-system"
+          ],
+          "outlist": [],
+          "label": "Depth-2 \u2014 the tool/supply distinction is the conceptual foundation connecting to existing toolbox and consumable clusters"
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -1284,11 +4075,54 @@
       "date": "",
       "metadata": {}
     },
+    "toyota-methodology-applied": {
+      "text": "Toyota production principles (5S, Kaizen, PDCA, Yokoten, Genchi Genbutsu, pull system) are actively operationalized in lab organization and design methodology \u2014 not merely referenced.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "toyota-philosophy",
+            "toyota-core-concepts",
+            "pull-system"
+          ],
+          "outlist": [],
+          "label": "Three belief clusters show Toyota principles are embedded in daily practice"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
     "toyota-philosophy": {
       "text": "Toyota built a powerful and long-standing philosophy of production that ties together engineering, design, manufacturing, quality, and business operations. Toyota employees receive ongoing trainings throughout their work life. Many major automakers and manufacturers have studied and integrated Toyota's processes.",
       "truth_value": "IN",
       "justifications": [],
       "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "transferable-toyota-engineering-curriculum": {
+      "text": "The self-reinforcing educational factory (Toyota-backed knowledge flywheel) combined with the empirically grounded open methodology (portfolio-validated, self-documenting) constitutes a transferable engineering curriculum where Toyota production principles are taught through active practice rather than theory.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "self-reinforcing-educational-factory",
+            "empirically-grounded-open-methodology"
+          ],
+          "outlist": [
+            "tamu-communication"
+          ],
+          "label": "Bridges Toyota/organization with education \u2014 blocked because institutional communication gaps prevent curriculum transfer"
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -1304,11 +4138,105 @@
       "date": "",
       "metadata": {}
     },
+    "unified-lifecycle-workspace": {
+      "text": "A safety-organized, professionally equipped workspace combined with an unbroken concept-to-product chain (digital CAD through motion actuation, FDM through structural mounting, stock components for rapid iteration) supports completing multiple lifecycle stages from initial concept through testable product within a single physical space, reducing but not necessarily eliminating dependence on external facilities.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "complete-professional-workspace",
+            "concept-to-product-chain"
+          ],
+          "outlist": [],
+          "label": "depth-4 \u2014 workspace completeness (d3) + lifecycle chain completeness (d3) = zero-handoff single-facility development"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "invalid"
+      }
+    },
+    "utility-station-infrastructure": {
+      "text": "OpenLab maintains dedicated utility stations (wash, charge) providing shared services distinct from domain-specific workstations, supporting all workflows without belonging to any single discipline.",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "station-wash",
+            "station-charge",
+            "station-concept"
+          ],
+          "outlist": [],
+          "label": "Depth-1 \u2014 completes the station cluster alongside soldering and admin stations"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "unnecessary"
+      }
+    },
     "vacuum-adapter": {
       "text": "Universal vacuum hose adapter is a parametric 3D-printed design for customizing fitment between vacuum hoses and attachments. Published on grabCAD. Solves incompatibility between various hose/nozzle sizes.",
       "truth_value": "IN",
       "justifications": [],
       "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "validated-open-manufacturing-standard": {
+      "text": "OpenLab's empirically validated methodology combined with its multi-domain production system constitutes a de facto open manufacturing standard for small-scale fabrication labs.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "empirically-grounded-open-methodology",
+            "multi-domain-production-system"
+          ],
+          "outlist": [
+            "printegrate-problems",
+            "open-items"
+          ],
+          "label": "Empirical grounding + multi-domain production = replicable standard, but DFM/modularity gaps and unfinished designs prevent declaring it complete"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "validated-production-franchise": {
+      "text": "The mature validated production at scale (empirically validated multi-domain production) combined with the franchise deployment ready model would mean new sites replicate not just methodology but validated, production-grade manufacturing capability.",
+      "truth_value": "OUT",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "mature-validated-production-at-scale",
+            "franchise-deployment-ready"
+          ],
+          "outlist": [
+            "printegrate-problems",
+            "tamu-communication",
+            "open-items"
+          ],
+          "label": "Both antecedents are currently OUT \u2014 this represents the furthest-horizon aspiration gated by all three blockers"
+        }
+      ],
+      "source": "",
       "source_url": "",
       "source_hash": "",
       "date": "",
@@ -1323,6 +4251,55 @@
       "source_hash": "",
       "date": "",
       "metadata": {}
+    },
+    "workspace-toolbox-system": {
+      "text": "Four domain-specialized toolboxes (cutting, clamping, forming/sanding, mechanics) on a consistent modifiable form factor provide portable, task-organized workstations that pair storage with active workspace",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "toolbox-1",
+            "toolbox-2",
+            "toolbox-4",
+            "toolbox-6",
+            "toolbox-mods"
+          ],
+          "outlist": [],
+          "label": "Toolboxes 1/2/4/6 are orphaned from the physical-organization-system; they represent the active-workspace complement to the storage-and-retrieval focus of that conclusion"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
+    },
+    "worry-mitigated-design": {
+      "text": "Toyota's pull-based design philosophy (wait for actual user needs before designing solutions) is the operational countermeasure to \"worry\" (premature effort on unencountered problems) \u2014 the methodology structurally prevents the anti-pattern the vocabulary identifies",
+      "truth_value": "IN",
+      "justifications": [
+        {
+          "type": "SL",
+          "antecedents": [
+            "glossary-worry",
+            "toyota-methodology-applied"
+          ],
+          "outlist": [],
+          "label": "The glossary names the failure mode; the Toyota methodology is the structural prevention \u2014 connecting diagnosis to treatment"
+        }
+      ],
+      "source": "",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "last_reviewed": "2026-05-31T11:40:14",
+        "review_result": "pass"
+      }
     }
   },
   "nogoods": [],

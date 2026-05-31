@@ -1,0 +1,779 @@
+{
+  "timestamp": "2026-05-31T10:15:25",
+  "status": "complete",
+  "model": "claude",
+  "timeout": 600,
+  "exhaust": true,
+  "filters": {
+    "domain": null,
+    "topic": null,
+    "min_depth": null,
+    "max_depth": null,
+    "premises": false,
+    "has_dependents": false,
+    "budget": 300,
+    "sample": false,
+    "cluster": false,
+    "intra_cluster": false,
+    "embedding_model": null,
+    "n_clusters": null,
+    "prompt_file": null
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "network_stats": {
+        "total_in": 129,
+        "total_derived": 0,
+        "max_depth": 0,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 17,
+      "valid": 12,
+      "skipped": [
+        {
+          "id": "reproducible-engineering-lab",
+          "reason": "missing nodes: ['standardization-strategy', 'toyota-methodology-applied', 'physical-organization-system', 'open-documentation-pipeline']"
+        },
+        {
+          "id": "full-stack-hardware-platform",
+          "reason": "missing nodes: ['electronics-prototyping-platform', 'modular-mounting-ecosystem', 'fdm-manufacturing-system', 'printegration-design-library']"
+        },
+        {
+          "id": "design-to-deployment-pipeline",
+          "reason": "missing nodes: ['open-documentation-pipeline', 'education-community-ecosystem', 'scuttle-ecosystem']"
+        },
+        {
+          "id": "tamu-documentation-resolved",
+          "reason": "missing nodes: ['open-documentation-pipeline']"
+        },
+        {
+          "id": "printegration-dfm-gap-closed",
+          "reason": "missing nodes: ['fdm-manufacturing-system', 'printegration-design-library']"
+        }
+      ],
+      "applied": [
+        {
+          "id": "standardization-strategy",
+          "truth_value": "IN"
+        },
+        {
+          "id": "physical-organization-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "open-documentation-pipeline",
+          "truth_value": "IN"
+        },
+        {
+          "id": "fdm-manufacturing-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "toyota-methodology-applied",
+          "truth_value": "IN"
+        },
+        {
+          "id": "education-community-ecosystem",
+          "truth_value": "IN"
+        },
+        {
+          "id": "electronics-prototyping-platform",
+          "truth_value": "IN"
+        },
+        {
+          "id": "modular-mounting-ecosystem",
+          "truth_value": "IN"
+        },
+        {
+          "id": "printegration-design-library",
+          "truth_value": "IN"
+        },
+        {
+          "id": "scuttle-ecosystem",
+          "truth_value": "IN"
+        },
+        {
+          "id": "environmental-control-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "consumable-infrastructure",
+          "truth_value": "IN"
+        }
+      ],
+      "added": 12
+    },
+    {
+      "round": 2,
+      "network_stats": {
+        "total_in": 141,
+        "total_derived": 12,
+        "max_depth": 1,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 16,
+      "valid": 14,
+      "skipped": [
+        {
+          "id": "full-stack-hardware-lab",
+          "reason": "missing nodes: ['fabrication-to-product-pipeline', 'operational-excellence-framework', 'knowledge-dissemination-loop']"
+        },
+        {
+          "id": "self-contained-prototyping",
+          "reason": "missing nodes: ['fabrication-to-product-pipeline']"
+        }
+      ],
+      "applied": [
+        {
+          "id": "fabrication-to-product-pipeline",
+          "truth_value": "IN"
+        },
+        {
+          "id": "operational-excellence-framework",
+          "truth_value": "IN"
+        },
+        {
+          "id": "knowledge-dissemination-loop",
+          "truth_value": "IN"
+        },
+        {
+          "id": "mechatronics-integration-platform",
+          "truth_value": "IN"
+        },
+        {
+          "id": "rapid-iteration-capability",
+          "truth_value": "IN"
+        },
+        {
+          "id": "soldering-workflow-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "lab-safety-ergonomics",
+          "truth_value": "IN"
+        },
+        {
+          "id": "digital-workspace-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "research-methodology-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "fluid-pneumatic-infrastructure",
+          "truth_value": "IN"
+        },
+        {
+          "id": "robotics-actuation-cluster",
+          "truth_value": "IN"
+        },
+        {
+          "id": "institutional-context",
+          "truth_value": "IN"
+        },
+        {
+          "id": "lab-replication-ready",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "printegration-mature",
+          "truth_value": "OUT"
+        }
+      ],
+      "added": 14
+    },
+    {
+      "round": 3,
+      "network_stats": {
+        "total_in": 153,
+        "total_derived": 26,
+        "max_depth": 2,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 14,
+      "valid": 14,
+      "skipped": [],
+      "applied": [
+        {
+          "id": "process-maturity-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "parametric-fabrication-ecosystem",
+          "truth_value": "IN"
+        },
+        {
+          "id": "lab-organization-infrastructure",
+          "truth_value": "IN"
+        },
+        {
+          "id": "structural-integration-standards",
+          "truth_value": "IN"
+        },
+        {
+          "id": "complete-mechatronic-workstation",
+          "truth_value": "IN"
+        },
+        {
+          "id": "professional-research-infrastructure",
+          "truth_value": "IN"
+        },
+        {
+          "id": "scalable-educational-platform",
+          "truth_value": "IN"
+        },
+        {
+          "id": "integrated-fluidics-mechatronics-capability",
+          "truth_value": "IN"
+        },
+        {
+          "id": "production-ready-research-infrastructure",
+          "truth_value": "IN"
+        },
+        {
+          "id": "self-sustaining-lab-model",
+          "truth_value": "IN"
+        },
+        {
+          "id": "resilient-knowledge-infrastructure",
+          "truth_value": "IN"
+        },
+        {
+          "id": "reproducible-mechatronics",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "community-onboarding-viable",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "production-ready-electronics",
+          "truth_value": "OUT"
+        }
+      ],
+      "added": 14
+    },
+    {
+      "round": 4,
+      "network_stats": {
+        "total_in": 164,
+        "total_derived": 40,
+        "max_depth": 3,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 14,
+      "valid": 14,
+      "skipped": [],
+      "applied": [
+        {
+          "id": "multi-domain-project-portfolio",
+          "truth_value": "IN"
+        },
+        {
+          "id": "power-tool-ecosystem",
+          "truth_value": "IN"
+        },
+        {
+          "id": "institutional-open-bridge",
+          "truth_value": "IN"
+        },
+        {
+          "id": "systematic-design-methodology",
+          "truth_value": "IN"
+        },
+        {
+          "id": "full-spectrum-fabrication",
+          "truth_value": "IN"
+        },
+        {
+          "id": "safety-organized-workspace",
+          "truth_value": "IN"
+        },
+        {
+          "id": "multi-domain-actuation-platform",
+          "truth_value": "IN"
+        },
+        {
+          "id": "concept-to-product-chain",
+          "truth_value": "IN"
+        },
+        {
+          "id": "research-to-education-pipeline",
+          "truth_value": "IN"
+        },
+        {
+          "id": "multi-domain-prototyping-lab",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "self-reinforcing-educational-factory",
+          "truth_value": "IN"
+        },
+        {
+          "id": "scalable-open-hardware-movement",
+          "truth_value": "IN"
+        },
+        {
+          "id": "institutional-bridge-active",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "full-stack-hardware-realized",
+          "truth_value": "OUT"
+        }
+      ],
+      "added": 14
+    },
+    {
+      "round": 5,
+      "network_stats": {
+        "total_in": 175,
+        "total_derived": 54,
+        "max_depth": 4,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 11,
+      "valid": 10,
+      "skipped": [
+        {
+          "id": "scalable-multi-domain-lab",
+          "reason": "similar to retracted belief: multi-domain-prototyping-lab (60% overlap)"
+        }
+      ],
+      "applied": [
+        {
+          "id": "open-engineering-paradigm",
+          "truth_value": "IN"
+        },
+        {
+          "id": "full-lifecycle-knowledge-capture",
+          "truth_value": "IN"
+        },
+        {
+          "id": "multi-domain-production-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "complete-professional-workspace",
+          "truth_value": "IN"
+        },
+        {
+          "id": "methodology-driven-fabrication",
+          "truth_value": "IN"
+        },
+        {
+          "id": "portfolio-validated-methodology",
+          "truth_value": "IN"
+        },
+        {
+          "id": "exportable-lab-methodology",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "self-documenting-fabrication",
+          "truth_value": "IN"
+        },
+        {
+          "id": "power-integrated-fabrication",
+          "truth_value": "IN"
+        },
+        {
+          "id": "project-breadth-and-depth",
+          "truth_value": "IN"
+        }
+      ],
+      "added": 10
+    },
+    {
+      "round": 6,
+      "network_stats": {
+        "total_in": 184,
+        "total_derived": 64,
+        "max_depth": 5,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 16,
+      "valid": 16,
+      "skipped": [],
+      "applied": [
+        {
+          "id": "documentation-quality-standards",
+          "truth_value": "IN"
+        },
+        {
+          "id": "workspace-toolbox-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "storage-design-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "engineering-design-vocabulary",
+          "truth_value": "IN"
+        },
+        {
+          "id": "innovation-culture-vocabulary",
+          "truth_value": "IN"
+        },
+        {
+          "id": "surface-finishing-processes",
+          "truth_value": "IN"
+        },
+        {
+          "id": "dfm-operationalized",
+          "truth_value": "IN"
+        },
+        {
+          "id": "worry-mitigated-design",
+          "truth_value": "IN"
+        },
+        {
+          "id": "power-integrated-mechatronics",
+          "truth_value": "IN"
+        },
+        {
+          "id": "demonstrated-breadth-and-institutional-bridge",
+          "truth_value": "IN"
+        },
+        {
+          "id": "professionally-systematic-fabrication",
+          "truth_value": "IN"
+        },
+        {
+          "id": "durable-self-documenting-knowledge",
+          "truth_value": "IN"
+        },
+        {
+          "id": "empirically-grounded-open-methodology",
+          "truth_value": "IN"
+        },
+        {
+          "id": "autonomous-open-lab",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "mature-validated-production-at-scale",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "community-validated-transferability",
+          "truth_value": "OUT"
+        }
+      ],
+      "added": 16
+    },
+    {
+      "round": 7,
+      "network_stats": {
+        "total_in": 197,
+        "total_derived": 80,
+        "max_depth": 5,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 14,
+      "valid": 14,
+      "skipped": [],
+      "applied": [
+        {
+          "id": "knowledge-preserving-open-paradigm",
+          "truth_value": "IN"
+        },
+        {
+          "id": "reproducible-lab-blueprint",
+          "truth_value": "IN"
+        },
+        {
+          "id": "institutional-independence-through-documentation",
+          "truth_value": "IN"
+        },
+        {
+          "id": "methodology-amplified-design-ecosystem",
+          "truth_value": "IN"
+        },
+        {
+          "id": "validated-open-manufacturing-standard",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "community-ready-full-stack-platform",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "openlab-terminology-system",
+          "truth_value": "IN"
+        },
+        {
+          "id": "utility-station-infrastructure",
+          "truth_value": "IN"
+        },
+        {
+          "id": "openlab-identity-and-mission",
+          "truth_value": "IN"
+        },
+        {
+          "id": "tool-and-supply-management-philosophy",
+          "truth_value": "IN"
+        },
+        {
+          "id": "lab-environment-and-maintenance",
+          "truth_value": "IN"
+        },
+        {
+          "id": "scalable-knowledge-dissemination-to-institutions",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "portfolio-complete-design-ecosystem",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "production-systematic-at-manufacturing-scale",
+          "truth_value": "OUT"
+        }
+      ],
+      "added": 14
+    },
+    {
+      "round": 8,
+      "network_stats": {
+        "total_in": 206,
+        "total_derived": 94,
+        "max_depth": 6,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 13,
+      "valid": 12,
+      "skipped": [
+        {
+          "id": "turnkey-multi-domain-prototyping",
+          "reason": "similar to retracted belief: multi-domain-prototyping-lab (60% overlap)"
+        }
+      ],
+      "applied": [
+        {
+          "id": "self-perpetuating-knowledge-institution",
+          "truth_value": "IN"
+        },
+        {
+          "id": "franchisable-open-engineering-model",
+          "truth_value": "IN"
+        },
+        {
+          "id": "franchise-deployment-ready",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "compounding-design-knowledge",
+          "truth_value": "IN"
+        },
+        {
+          "id": "self-correcting-methodology-validated",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "complete-power-motion-platform",
+          "truth_value": "IN"
+        },
+        {
+          "id": "unified-lifecycle-workspace",
+          "truth_value": "IN"
+        },
+        {
+          "id": "disciplined-efficient-design",
+          "truth_value": "IN"
+        },
+        {
+          "id": "holistic-workspace-environment",
+          "truth_value": "IN"
+        },
+        {
+          "id": "precision-documentation-framework",
+          "truth_value": "IN"
+        },
+        {
+          "id": "production-conscious-rapid-prototyping",
+          "truth_value": "IN"
+        },
+        {
+          "id": "lab-services-infrastructure",
+          "truth_value": "IN"
+        }
+      ],
+      "added": 12
+    },
+    {
+      "round": 9,
+      "network_stats": {
+        "total_in": 216,
+        "total_derived": 106,
+        "max_depth": 7,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 10,
+      "valid": 6,
+      "skipped": [
+        {
+          "id": "disciplined-production-ecosystem",
+          "reason": "missing nodes: ['disciplined-rapid-manufacturing']"
+        },
+        {
+          "id": "precision-lifecycle-documentation",
+          "reason": "missing nodes: ['precision-documented-fabrication']"
+        },
+        {
+          "id": "turnkey-mechatronics-facility",
+          "reason": "missing nodes: ['complete-integrated-facility']"
+        },
+        {
+          "id": "methodology-transferable-to-institutions",
+          "reason": "missing nodes: ['empirically-reproducible-methodology', 'institutionally-validated-portfolio']"
+        }
+      ],
+      "applied": [
+        {
+          "id": "precision-documented-fabrication",
+          "truth_value": "IN"
+        },
+        {
+          "id": "disciplined-rapid-manufacturing",
+          "truth_value": "IN"
+        },
+        {
+          "id": "institutionally-validated-portfolio",
+          "truth_value": "IN"
+        },
+        {
+          "id": "complete-integrated-facility",
+          "truth_value": "IN"
+        },
+        {
+          "id": "empirically-reproducible-methodology",
+          "truth_value": "IN"
+        },
+        {
+          "id": "compounding-reproducible-knowledge",
+          "truth_value": "IN"
+        }
+      ],
+      "added": 6
+    },
+    {
+      "round": 10,
+      "network_stats": {
+        "total_in": 222,
+        "total_derived": 112,
+        "max_depth": 7,
+        "agents": 0,
+        "agent_names": [],
+        "budget": 300,
+        "sample": false
+      },
+      "proposals_found": 17,
+      "valid": 16,
+      "skipped": [
+        {
+          "id": "credible-exportable-methodology",
+          "reason": "similar to retracted belief: exportable-lab-methodology (50% overlap)"
+        }
+      ],
+      "applied": [
+        {
+          "id": "precision-engineered-production-pipeline",
+          "truth_value": "IN"
+        },
+        {
+          "id": "methodology-transparent-integrated-facility",
+          "truth_value": "IN"
+        },
+        {
+          "id": "institutionally-anchored-knowledge-paradigm",
+          "truth_value": "IN"
+        },
+        {
+          "id": "transferable-toyota-engineering-curriculum",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "self-perpetuating-integrated-production-knowledge",
+          "truth_value": "IN"
+        },
+        {
+          "id": "convergent-open-engineering-apex",
+          "truth_value": "IN"
+        },
+        {
+          "id": "globally-deployable-engineering-standard",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "compounding-facility-knowledge-institution",
+          "truth_value": "IN"
+        },
+        {
+          "id": "complete-autonomous-franchise",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "validated-production-franchise",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "precision-documented-reproducible-lab",
+          "truth_value": "OUT"
+        },
+        {
+          "id": "professionally-maintained-workspace",
+          "truth_value": "IN"
+        },
+        {
+          "id": "resource-managed-fabrication-ecosystem",
+          "truth_value": "IN"
+        },
+        {
+          "id": "finished-product-fabrication-chain",
+          "truth_value": "IN"
+        },
+        {
+          "id": "academically-grounded-design-methodology",
+          "truth_value": "IN"
+        },
+        {
+          "id": "digitally-integrated-professional-facility",
+          "truth_value": "IN"
+        }
+      ],
+      "added": 16
+    }
+  ],
+  "total_added": 128
+}
