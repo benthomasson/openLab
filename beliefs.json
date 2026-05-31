@@ -1,0 +1,1330 @@
+{
+  "meta": {
+    "schema_version": "1.0",
+    "project_name": "reasons",
+    "created_at": "2026-05-31T13:50:42+00:00",
+    "updated_at": "2026-05-31T14:08:12+00:00",
+    "node_count": 129,
+    "generator": "ftl-reasons/0.43.0"
+  },
+  "nodes": {
+    "actuators-taxonomy": {
+      "text": "All mechanical actuators in the lab move energy through heat, pressure, or motion, applied to solids, liquids, or gases, driven by electrical inputs. For robotics, every machine is ultimately one or more actuators controlled by logic. If you learn all actuators and how to control them, you can design anything.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "admin-labeler": {
+      "text": "Lab uses Dymo 550 labeler for 5S organization \u2014 fast, reliable, globally available compatible spools. Downside: Dymo added RFID sensor to lock-in their own expensive spools, but performance justifies tolerating the business practice.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "air-filtration": {
+      "text": "Lab uses Honeywell HPA300 and HPA200 HEPA air purifiers since 2018. Adjustable power levels from quiet (40W) to turbo. Carbon prefilters changed quarterly, collect VOCs and dust. Third-party replacement filters available at competitive pricing.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "battery-standard": {
+      "text": "18650 lithium-ion cells are the standard battery choice for high performance and ubiquitous availability. Battery integration includes terminals, trays, BMS boards for multi-cell projects, and custom wraps. Lab can perform battery tab welding (preferred over soldering to avoid heat damage).",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "beam-materials": {
+      "text": "Lab beam materials hierarchy: unistrut (very high strength steel backbone), 3030 aluminum extrusion (desk-sized assemblies), 2020 aluminum (non-forceful assemblies with accurate datums), EMT conduit 1/2in and 3/4in (reach with less dimensional accuracy), fiberglass 3/8in rod (tension reinforcement), DIN rail (modular mounting with alignment).",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "benchtop-testing": {
+      "text": "Benchtop testing panel design uses slotted extrusions, 35mm DIN rail, corner brackets, and M6 fasteners. Goal: eliminate errors from scattered wires by structuring test setups. Components are reusable for any future invention. CAD template available on grabCAD.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "bin-hierarchy": {
+      "text": "Storage bin hierarchy: Plano Prolatch 3700 (9x14in) for full parts categories stored flat or upright, Plano 3500 (5x9in) always hung vertically on pegboard for lighter collections, industrial divider bins (Akro-Mils/Uline/LewisBins ~5 each, last forever) for critical inventory, Sterilite Clearview bins (6qt and 15qt) for see-through grouped storage, zipper pouches for small grouped supplies.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "organize.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "M5 fasteners collection (screws, washers, nuts \u2014 ~50 unique components): goes in a Plano Prolatch 3700 (9x14in), stored flat. Overflow of bulk M5 stock: goes in an opaque industrial divider bin (Akro-Mils) for long-term storage. Fuses and plastic retaining clips (lightweight): go in a Plano 3500 (5x9in), hung vertically on pegboard. Grouped small supplies like USB adapters: go in a Sterilite Clearview 6qt bin for see-through access."
+      }
+    },
+    "blended-automation": {
+      "text": "Blended automation (Industry 4.0): combining simple off-the-shelf embedded circuits (Arduino) with traditional industrial automation systems (PLCs, relays). These are rarely found together as of 2020 \u2014 OpenLab aims to change that.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "deferred.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "bonding-philosophy": {
+      "text": "Adhesives bonding philosophy: with bonds that exceed material strength, two parts can become one part after manufacturing. Over 10 years of adhesives research. Testing uses standardized 'testbar' geometry for shear load testing \u2014 if you can crack parts free with arm strength, it's likely below 40 lbs on pull-test.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "Testing uses a standardized 'testbar' geometry for shear load evaluation. Bond a testbar to stock material, then apply shear load. Quick qualification: if you can crack the parts free with arm strength, the bond is likely below 40 lbs on the pull test. Two primers and three adhesives in various combinations with ABS printed parts gave the greatest performance in 2025.10 trials."
+      }
+    },
+    "color-code-system": {
+      "text": "Tools and parts are marked with a color code by last digit: 0=black, 1=white, 2=blue, 3=green, 4=orange, 5=red, 6=silver, 7=yellow, 8=purple, 9=gold. Uses alliteration ('two is blue') for recall. Tested and adjusted for 8+ years. Applied with enamel paint or nail polish. Half-sizes share the same color and rarely cause confusion.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "organize.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "A 13mm socket gets green paint (last digit 3, 'three is green'). A 23mm socket also gets green \u2014 the 10mm size difference is obvious by inspection. A 17mm wrench gets yellow (last digit 7, 'seven is yellow'). During an engine disassembly, a quick blot of yellow on a bolt says 'use the 17mm wrench' and saves time grabbing the wrong one mid-project."
+      }
+    },
+    "community-discord": {
+      "text": "OpenLab has a community Discord server (discord.gg/Napn9mhd43), initiated along with the YouTube channel.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "community-youtube": {
+      "text": "David Malawey's YouTube channel has 400+ engineering videos (youtube.com/@davidmalawey).",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "cordless-power-adapters": {
+      "text": "Four 3D-printed adapters customize power delivery for 18V DC power tools: battery terminal (access power), battery dummy (deliver power to tool), battery rack (affix battery), and battery jig (affix tool). All published on grabCAD.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "corrosion-control": {
+      "text": "Corrosion control method: hygrometers in sensitive drawers to monitor humidity, moisture absorbers (calcium chloride or silica gel), corrosion inhibitor spray (SuperLube 83110) for storage. Bare steel tools cleaned with BKF and abrasive scrubber. Silica bags weighed to detect ~20% weight gain as saturation indicator. Calcium chloride absorbers last 6-12 months in toolbox with 3 tubs.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "deferred-abs-material": {
+      "text": "ABS polymer is preferred for FDM printing because of: UV/sun tolerance, wicking and bonding with CA glue (superglue), compatibility with OTS PVC parts, and toughness over PLA and PETG.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "deferred.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "din-rail-designs": {
+      "text": "Multiple 3D-printable DIN rail brackets published on grabCAD: DIN-spring (clip-on), tube clamp (round pole attachment), minimal-pi-bracket (15-min print Raspberry Pi holder), DIN-rail-pivot (end-to-end bending \u00b190\u00b0), compliant brackets (built-in springs), handy-mount (electrical box mounting).",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "din-rail-electronics": {
+      "text": "DIN rail components are the best method for terminating and routing power cables (vs signals). Used in SCUTTLE Robot and any project above 50 watts. Components are highly available and low cost by 2020 but seem unfamiliar because they come from heavy industrial projects.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "dupont-connectors": {
+      "text": "Dupont style connectors are the standard for removable cable ends in DIY electronics. Used for all generic functional cables. Other connector types only needed for water resistance, shock/vibration, heat, or specialty conditions.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "electronics-bin-org": {
+      "text": "Electronics are organized in action-based bins that survived 3-8 years without label changes: actuators, battery, connectors, DIN rail, dupont, LED lights, MCU, pigtail, sensors (2 bins), servos, solder, switches, terminals. ~1,000 small decisions keep inventory manageable without adding bins.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "electronics-key-devices": {
+      "text": "Key electronics devices span microcontrollers (ESP8266, ESP32, ESPWROOM), analog sensors (soil moisture, buzzer, IR motion, limit switch, float switch), digital sensors (SHT31 temp-humidity, TLS2591 light, DS18B20 thermistor, flow sensor), and actuator drivers (DRV8825 stepper, A4988, WS2811 LED strip). Each has a wiring diagram.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "emt-conduit": {
+      "text": "EMT (Electrical Metallic Conduit) at 1/2 and 3/4 inch trade sizes are integrated with other OpenLab supplies. Soft steel grade, stronger than aluminum but not structural steel. Takes paint readily, easily drilled, shaped with carbide burr, thick enough to tap holes.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "expanded-pvc": {
+      "text": "Expanded PVC (PVC foam) is a preferred panel material. Tips: choose 6mm thickness, mark with pencil, cut with utility knife, bond using PVC cement with nearly any other material.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "extrusion-sourcing": {
+      "text": "3030 aluminum extrusion preferred from AutomationDirect (AD): consistent specs, single-source manufacturer, fast free shipping in USA, free custom cut lengths including 45-degree angles with sub-mm accuracy. Amazon and McMaster are alternatives.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "fastener-strategy": {
+      "text": "Fastener inventory strategy: eliminate less-common sizes but maintain ability to produce them. Example: stock only 30mm and 40mm lengths, cut 40mm down to 35mm when needed. Prefer standard sizes in designs to keep inventory simpler. M2.5 and M6 are the default small and large fasteners.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "organize.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "Consider the 35mm screw: rather than stocking 30mm, 35mm, and 40mm lengths, stock only 30mm and 40mm. Prefer 30mm or 40mm in new designs. When a design genuinely cannot accommodate 30mm, cut a 40mm screw down to 35mm. Use washers and nut variations around the 30mm range to adjust. Result: simpler inventory, guided design preferences, simpler assembly."
+      }
+    },
+    "fdm-design-rules": {
+      "text": "FDM design rules: 1) Start with standard beams (3030 aluminum, 3/4in EMT, unistrut, DIN rail). 2) Attach via established standards (1/4-20 for cameras, DIN for electronics, EMT joints for structure). 3) Seek benchmarks, prefer OTS part families, then 3D prints, then metric fasteners. 4) Assembly design and part design are separate projects. 5) Only one invention per design \u2014 cannot validate two unknowns in same build. 6) Break complex geometry into minimal elements: rigid beams, joints, panels, interfaces. 7) Build up geometry with preferred materials. 8) Join members collinear or at 90\u00b0.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "invent.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "Rule 5 (one invention per design): If you want to design a mobile robot with 4 mechanum wheels, you should start with an already validated robot having ordinary wheels. You cannot validate two unknowns in the same build. The mechanum wheels are one unknown; the chassis is another. Validate the chassis first with known wheels, then swap in the mechanum wheels as the single new variable."
+      }
+    },
+    "fiberglass-rebar": {
+      "text": "Pinkbar and Greenbar (fiberglass rebar) have amazing compatibility with superglue and 3D printing. Cut with carbide and diamond blades. Spray clear poly lacquer after cutting to prevent itching from fiberglass.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "flush-cutter-rec": {
+      "text": "Recommended flush cutters: IGAN 330 model. Hardware store cutters are too bulky and imprecise; stamped steel cutters bend out of alignment with one forceful cut.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "github-for-mes": {
+      "text": "Mission: teach mechanical experts minimal online functions to document designs on GitHub without forcing Linux/CLI learning. Docsify-This by Paul Hibbits was a game changer \u2014 omits 95% of GitHub learning requirements. Goal: raise from 10% to 95% of designers having time to learn and repeat the documentation process.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "invent.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-am": {
+      "text": "AM (Additive Manufacturing): modern manufacturing methods including 3D printing, CNC laser cutting, and other processes driven by fully digital control schemes.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-ctf": {
+      "text": "CTF (Critical-to-Function): key dimensions or specifications in a mechanical design crucial to the function of the part. Drawings callout CTF dimensions rather than labeling every dimension, focusing engineers on crucial geometries for cost optimization.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-dfm": {
+      "text": "DFM (Design for Manufacturing): the expertise area and actions relating to integrating manufacturing processes into the design process.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-foost": {
+      "text": "FOOST (Fear of Open Source Technology): the tendency of a business-minded individual to allow assumptions about technology to guide their interactions towards ignorant rejection of opportunities.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "A business-minded individual hears '3D printed bearing' and assumes it cannot carry real loads because 'plastic is weak.' Without testing, they reject the opportunity. In reality, OpenLab's print-in-place bearing with steel balls handles significant loads, and the printed sleeve bonded to fiberglass rebar tested to 600 lbs of pulling force with superglue."
+      }
+    },
+    "glossary-full-stack-hw": {
+      "text": "Full Stack Hardware Developer: someone undertaking design-build-verify-document processes with accessible materials by a repeatable process so others may follow.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-gdt": {
+      "text": "GD&T (Geometric Dimensioning and Tolerancing): a globally-accepted language and set of symbols for mechanical design drawings to specify geometry, accuracy, and allowable tolerances.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-printegrate": {
+      "text": "Printegrate: to design a part using 3D printing plus all commercial off-the-shelf components, retaining the full digital design. A printegrated part is like a printable part but may include fasteners and any other globally distributed part.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-prl": {
+      "text": "PRL (Project Readiness Level): a rating system similar to NASA's TRL for describing a prototype by establishing an expected type of outcome.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-responsitory": {
+      "text": "Responsitory: a new word (coined 2025.06.25) for someone's territory for a job before designating the tasks, or under consideration.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-smart": {
+      "text": "SMART: specific, measurable, achievable, results-based, and time-bound. The ideal characteristic of an engineering target or communication.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-tdp": {
+      "text": "TDP (Technical Design Package): a directory or collection of files that describe a design beyond only a CAD model \u2014 may include datasheets, key notes, diagrams, documentation, and tabulated arrays of design variations.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "glossary-worry": {
+      "text": "Worry (in engineering): to exert effort to countermeasure a problem that has not been encountered. To input solution-oriented features before verifying and characterizing a problem.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "Designing a 3D printed enclosure with water drainage channels before verifying that the enclosure will ever encounter water. The designer inputs solution-oriented features (drainage) before verifying and characterizing the problem (does water actually enter?). Better to prototype without drainage, test in the real environment, then add countermeasures only for verified issues."
+      }
+    },
+    "glove-selection": {
+      "text": "Three glove types selected for the lab: 1) Hyflex 11-561 for cut resistance, 2) MCR Safety 919 for mechanics work, 3) Showa 719B or Honeywell 101V for chemical resistance. All from reputable manufacturers with documented part numbers and datasheets.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "grabcad-platform": {
+      "text": "GrabCAD is the primary platform for publishing CAD models. All models tagged with keyword 'openlab' for unified search. GrabCAD chosen for: engineering/industrial focus, collaboration tools, version control, wide file type support. Models use STEP-AP14 for color rendering.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "invent.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "handybox-integration": {
+      "text": "Stamped steel electrical boxes (handybox) are standard North American components at .50-.50 each. Three sizes: 1-gang (2x4in), 2-gang square (4x4in), and octagon. Raco brand preferred. Integration became large enough to spawn the OpenBox Project repository.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "printegrate.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "hanger-system": {
+      "text": "TiltMount is a 3D-printed bracket for mounting 20mm beam on a wall with gentle upward slope so straight hooks hold materials without slipping. Compatible with Triton hook multipacks using M5x10mm fasteners. Horizontal hooks provide better accessibility than drawers.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "organize.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "lighting-design": {
+      "text": "Lab lighting: 5 LED shop lights at 5000 lumens each for 330 sq ft space (~1k lumens per square meter recommended minimum). Installed upside-down oriented at ceiling to spread light, eliminate bright spots, and reduce harsh shadows. White-painted ceiling and walls enhance light distribution.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "manuals-format": {
+      "text": "Lab tool manuals are stored as PDFs: simplified (non-English sections removed), tagged for search, compressed for size, enhanced with OCR for text search, bookmarked at key sections. Notes from lab use are added as additional pages or digital comments with author initials and dates.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "manuals/about.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "materials-3dprinting": {
+      "text": "3D printing in OpenLab covers best practices for printing prototypes, including those suited for scaling to production.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "materials-metalwork": {
+      "text": "Metalwork in OpenLab covers several processes for metal fabrication, without CNC machines.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "materials-paint": {
+      "text": "Paint and polish processes in OpenLab achieve desired appearance with repeatable methodologies.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "materials-woodwork": {
+      "text": "Woodwork in OpenLab is primarily for building fixtures.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "mcu-boards": {
+      "text": "MCU boards (Arduino, ESP8266, ESP32) are so inexpensive that a device including computing module, cables, sensors, and 3D printed enclosure costs less than the engineering time to write the software. Programs compiled via Arduino IDE with USB transmission.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "meta-accessibility": {
+      "text": "Accessibility principles: images and attachments should offer a trail back to their webpage or project. Names, tags, and metadata all serve accessibility. Files not described in text should be excluded. Important images saved locally even if hosted online, for unified documentation when repo is downloaded.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "meta.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "meta-cad-docs": {
+      "text": "CAD documentation template: folder structure (all files in folders), STEP-AP14 priority for color rendering, no postprocessing hidden steps, include crucial mating components as simplified geometry, generate one STL with Z-axis up indicating print direction, use 1-digit revision numbers in STL filenames.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "meta.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "meta-file-size": {
+      "text": "File size limit: aim for all files below 25MB (GitHub max for attachments). Videos should go on YouTube (select 'unlisted' for non-public content) \u2014 no file size limit, globally high performance servers, automatic thumbnails.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "meta.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "meta-images": {
+      "text": "Image best practices: use .jpg (better compression than PNG, supports tags), square aspect ratio (most versatile for online posting, survives cropping to portrait or landscape), resolution 2048x2048, aim for \u2264350KB, include tags for traceability, prefix filenames with img_ and use numbered suffixes for series.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "meta.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "meta-project-vs-part": {
+      "text": "A design becomes a project when: A) documentation doesn't fit within one CAD model post, or B) intended value is outside the part's performance. Projects need use cases, key suppliers, benchmarking of OTS variants, application videos, and naming conventions beyond version numbers.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "meta.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "OpenBox Project: started as a single handybox CAD model but branched into multiple directions. Multiple parts posted on grabCAD each with keyword 'openbox.' Use cases listed on homepage. Key suppliers (Raco brand) benchmarked against alternatives. Applications like 'car adapter' executed in full with videos. Naming conventions describe function, not just version numbers. The documentation no longer fits in one CAD post \u2014 it became a project."
+      }
+    },
+    "meta-research-approach": {
+      "text": "Research approach: use distributors (McMaster, AutomationDirect) as research partners, not just stores. Distributors hire engineering teams to understand customer applications and build expertise often deeper than the customer's. Find catalogs from longest-standing/highest-reputation manufacturers to interpret the full span of technical variations.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "meta.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "metal-am-experience": {
+      "text": "David Malawey has ~4 years FDM printing and ~2 years metal printing experience (as of 2019 presentation at ENISE university, Saint Etienne, France). Documented top failure modes in metal additive manufacturing.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "deferred.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "methods-overview": {
+      "text": "Methods cover engineering, fabricating, and building. Engineering = design, evaluation, benchmarking, parts-research, documentation. Fabricating = constructing parts from raw materials. Building = all technician-level activities. Methods are standard instructions applicable to multiple actions.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "molle-integration": {
+      "text": "MOLLE (military modular equipment standards) are being explored for lab organization since January 2025. The standardized clips, straps, grids, and hooks offer solutions for lab arrangement problems. Early-stage integration.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "deferred.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "open-items": {
+      "text": "Open design projects seeking community help: CV joint (constant velocity joint, balls-in-cup, for open mop use case), perfect spool (printable, modular racking, wire dispensing), conveyor belt (needs redesign with latest design rules, fits SCUTTLE Robot), chamfer tool (parametric for PVC pipe), jigsaw rig, sander rig, modular ACME thread with steel ball reinforcement.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "invent.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "openlab-author": {
+      "text": "OpenLab is created and maintained by David Malawey, who documents assets from the SCUTTLE Robotics development lab for others worldwide.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "openlab-focus": {
+      "text": "OpenLab focuses on hands-on designers and researchers of mechatronics, often giving way to robotics. It is a collection of tools, processes, and CAD designs for building a great robotics lab.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "openlab-mission": {
+      "text": "OpenLab is the world's first fully documented multidisciplinary engineering lab, bridging university-grade academics with real-world industrial expertise. The goal is to create the ultimate model lab by openly sharing exact tools, supplies, and methods for everything from traditional fabrication to modern robotics.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "openlab-open-model": {
+      "text": "OpenLab operates on an open sharing model where learners can easily find answers and experts can offer feedback to continuously refine the art of prototyping.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "openlab-purpose": {
+      "text": "OpenLab's deeper purpose is to change the world through openly documented, repeatable, accessible engineering technology. A lab purpose PDF elaborates on this vision.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "otp-parts": {
+      "text": "OTP (Off-The-Print) parts are parametric 3D printed designs with recurring instances. Each instance is unique but driven by refined parametric models. Similar to OTS (off-the-shelf) in being easy to grab-and-go, low cost, wide application, and globally available via grabCAD. Examples: hinges, mandrels (150+ lbs shear strength on EMT conduit), sleeves (superglue bonded to fiberglass rod).",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "The hinge_V2 is used first on toolboxes for nested racks that add tool storage and convenient access. The same hinge is reused with adjusted geometry to connect the assembly that holds and displays datasheets for capturing videos. Each reuse gains a solution unavailable from off-the-shelf parts, with matching reliability and robustness, from engineering effort refined in the first copy."
+      }
+    },
+    "pc-workstation": {
+      "text": "CAD workstation: AMD Ryzen 7 3700x, AMD Radeon Pro WX4100 GPU (chosen over RTX2060 for professional CAD \u2014 lower cost, lower power, better CAD performance), Samsung 980 Pro SSD, 32GB Corsair RAM, Corsair RM750x PSU.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "printegrate-bearings": {
+      "text": "Printable bearing designs: full bearing with print-in-place geometry accepting many ball sizes/materials, parametric for custom ID/OD/width. BearingX has no inner race \u2014 steel balls run directly on shaft for higher strength. RollerBracket attaches OTS skate wheels to 3030 extrusion, validated 3+ years.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "printegrate.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "printegrate-concept": {
+      "text": "Printegrating means integrating 3D printing with off-the-shelf parts. The purpose is to create targeted improvements for the global 3D printing community. Printegrated parts double value over parametric parts by including parameters derived from the mating part, capture qualities of metal parts, reduce print time and material, and carry OTS manufacturer documentation and certifications.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "printegrate.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "printegrate-hinges": {
+      "text": "Hinge designs library: hingeRod (fiberglass rod joints \u00b190\u00b0), hingeEnd (2020 extrusion print-in-place), hinge30 (3030 extrusion), pivotBeam (2DOF double-hinge, print-in-place without supports), hingeRound (EMT conduit 1in). Common hinge pin: 6mm HDPE tube, M6 fastener, or 1/4in clevis pin.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "printegrate.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "printegrate-problems": {
+      "text": "Printegration addresses three problems: 1) DFM \u2014 designers uninformed in design-for-manufacturing in FDM, need modularity and awareness of best OTS components. 2) Customization \u2014 open source parts must be adjustable with clear parametric instructions. 3) Value \u2014 3D printing has immense untapped value potential that printegrated parts can capture.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "printegrate.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "printegrate-sleeves": {
+      "text": "Sleeve designs: shaft adapters for thin walls with bearing integration (8mm or 1/2in), retaining rings or o-rings for retention, parametric offset for belt fitting. Fiberglass rebar sleeve tested to 600 lbs pulling force with superglue bond.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "printegrate.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "printing-setup": {
+      "text": "3D printing toolset is focused on reliability over versatility. Uses ABS as the main material for functional parts. Three identical Flashforge Creator Pro printers stacked vertically. In 2026, the Flashforge AD5M Pro (~50) was added. Recommended printer: Flashforge Adventurer 5M Pro.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "prl-standard": {
+      "text": "PRL (Project Readiness Level): evolving rating system for dividing projects into stages, similar to NASA's TRL. Published 2023 but as of 2025.10 not ready for direct implementation \u2014 currently more actionable to make simple criteria lists. Goal is to enhance vocabulary for collaboration.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "invent.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "process-documentation": {
+      "text": "Documentation process: convert information to written form, publish models online, create manuals, add performance data, create tutorials, metadata for photographs, publish tables, post videos, structure PDFs, refine file sizes, post online writeups, gain global feedback.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "process-engineering": {
+      "text": "Engineering process: evaluate benchmark systems with space and tools to dismantle machines, inspect and measure (weights, dimensions, colors, standards), photograph parts, sketch designs, build CAD models, retrieve data online, tabulate plans mathematically.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "process-evaluation": {
+      "text": "Evaluation process: measure features in size, shape, tolerance, hardness, rigidity of assemblies. Apply loads including pressure, tension, twisting, compression and measure deflections, leaks, stress and strain.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "process-fabrication": {
+      "text": "Fabrication process: form raw materials into parts across metals, wood, polymers, springs, seals, fasteners, with adjustment of dimensions and fitment of mated parts.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "process-prototyping": {
+      "text": "Prototyping process: cut materials, access standard components, make permanent bonds, adjust material fit and finish, apply colors and textures, create airtight and watertight seals, generate custom CAD parts, fasten assemblies, clamp and shape materials.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-openair": {
+      "text": "OpenAir project: take control of air, pressure, and flow with open elements. Link: qr.net/openairproject",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-openarm": {
+      "text": "OpenArm project: revolutionize robotic arms, a 10-year goal. Link: qr.net/openarmproject",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-openbox": {
+      "text": "OpenBox project: array of open designs beginning with a steel box. Link: qr.net/openboxproject",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-opengrow": {
+      "text": "OpenGrow project: open designs for hydroponics and aquaponics systems. Link: qr.net/opengrowproject",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-openjar": {
+      "text": "OpenJar project: array of designs for standard jars, threads, and seals. Link: qr.net/openjarproject",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-openme": {
+      "text": "openME project: a free, comprehensive Mechanical Engineering degree, in-progress. Link: qr.net/openmeproject",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-openspin": {
+      "text": "OpenSpin project: array of designs based on parametric bearings. Link: qr.net/openspinproject",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-scuttle-mini": {
+      "text": "SCUTTLE Mini project: miniature mobile robot with 10kg payload designs. Link: qr.net/scuttlemini",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-scuttle-nigeria": {
+      "text": "SCUTTLE Nigeria project: university-level robotics lab in Lagos, Nigeria. Link: qr.net/scuttleafrica",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "project-scuttle-tech": {
+      "text": "SCUTTLE Tech project: engineering designs for the SCUTTLE robot. Link: qr.net/scuttleproject",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "pull-system": {
+      "text": "Toyota's pull system applied to design: better to pull a design towards a user application than push a design to fit expected utility. Without pull: designer exerts high effort on unadopted parts, designs are uninformed by real users, strength criteria cannot be chosen without application, template configurations cannot be selected. All OpenLab content answers questions that were asked in real life \u2014 content is pulled by real needs.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "invent.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "The bit holder was designed to hold tools, and during design it was clear it could be configured for many kinds of tools including drill bits. But a user would inform the designer that tools of many sizes are best accessed in a row from small to large \u2014 if bits are placed in a grid, it becomes visually confusing. So the drill bit storage became a completely different design. The only way to make this good decision is to have the user available to 'pull' the design in the best direction."
+      }
+    },
+    "push-fit-connectors": {
+      "text": "Push-fit tubing connectors (from the RO kit) have become standard components for routing fluids including pressurized air. Tool-free assembly, 200 PSI tolerance, reusable without damage, tubes rotate without breaking seal. Displaces NPT fittings, tapping, and thread-sealing tape. Tested 7+ years with zero leaks.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "reference-materials": {
+      "text": "Key engineering reference materials in the repo: NFPA70 electrical standards, Gates belt design guide, Koyo bearing guide, US Marines MOLLE equipment guide, Forest Products Lab wood handbook.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "invent.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "ridgid-tools": {
+      "text": "Ridgid brand is chosen for lithium power tools because of the lifetime warranty and free replacement. Battery performance competes with DeWalt, Bosch, Milwaukee, but only Ridgid offers free replacement for registered tools.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "ro-filter": {
+      "text": "The lab uses an Aquatic Life reverse osmosis filter system for purified water. Three-stage system, fills 5 gallons in ~50 minutes, removes nearly all dissolved solids. Used for drinking water, aquariums, and hydroponics. Filter lasts ~400 gallons, 5 RO membrane replacement.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "safety-glasses-color": {
+      "text": "Safety glasses are color-coded so each pair is assigned to a specific station. A slot at each workstation is marked with the same color, ensuring glasses return to their space.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "sensor-bin-tiers": {
+      "text": "Sensors divided into two tiers: Bin 1 has global popular devices covering full range of physical phenomena (current, heat, humidity, pressure, light, turbidity). Bin 2 has higher-effort items (GPS, SD card readers, strain gauges) requiring more integration steps. Students advised to avoid Bin 2 for single-semester projects.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "Bin 1 (easy integration, single semester): SHT31 temp-humidity sensor \u2014 popular, well-documented, straightforward wiring, abundant Arduino tutorials. Bin 2 (higher effort): GPS module \u2014 more costly, complex integration, requires finding specific software libraries, fewer matching online tutorials, and calibration steps that demand deeper expertise. A student constrained to one semester should pick from Bin 1."
+      }
+    },
+    "servo-motors": {
+      "text": "RC-style servo motors are the most sophisticated complete control system with mechanical actuator under 0. Include metal geartrain, analog feedback, servo horns. Operate at 5-6V with standard 50Hz/20ms pulse. Failure mode engineered: horn teeth weaker than output gear so expendable part breaks in crash.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "software-stack": {
+      "text": "Key software: NAPS2 (scanning, free/open), PDF Xchange Editor (PDF editing), ShareX (image editing/screenshots/OCR), Draw.io (diagrams, open source), Orca-Flashforge (3D slicer, open source with Flashforge settings).",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "solder-scope": {
+      "text": "Soldering scope deliberately truncated at through-hole components (\u22651.25mm). SMD soldering excluded because scope expands vastly and no functional project opportunities are lost \u2014 turnkey boards exist for all relevant devices, often with extra features at lower total cost than DIY SMD.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "soldering-iron-rec": {
+      "text": "Recommended soldering iron: Pinecil (first choice) or TS100 (second). Key properties: 80+ watts for <30 second heatup, replaceable tips with embedded heating element and thermocouple. Pinecil can draw power from USB-C PD at 20V/80W.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "station-admin": {
+      "text": "The admin station centers on an Epson DS-510 scanner (since 2016) for digitizing manuals and documents. Key principle: there must be seamlessness between the world of data and the material world in the lab.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "station-charge": {
+      "text": "The charge station is a wall station for quickly charging USB-powered handheld tools, phones, or battery cells. Includes a 45W USB outlet (installed 2024), XTAR battery charger for capacity testing, and PB2S modular power bank.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "station-concept": {
+      "text": "A station is formed by asking 'what is the gap between the tool and useful work?' and breaking down that question into pieces, then arranging all pieces into one space to get the job done.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "The Grommet Press Tool requires not just the tool but several steps before it can do a job. Forming a station asks 'what is the gap between the tool and useful work?' \u2014 for the grommet press, that means: the grommets themselves, the material to be grommeted, a surface to press against, lighting, and a place to stage finished parts. Arranging all of those pieces into one space creates the station."
+      }
+    },
+    "station-solder": {
+      "text": "The soldering station uses 30mm extrusion and DIN rail with tool holders. Features a DIN-mounted power meter for monitoring station-wide power consumption and verifying device current draw.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "station-wash": {
+      "text": "The wash station (posted March 2026) contains cleaning supplies, a utility sink with hot/cold water, a reverse osmosis filter system, wall-mounted cleaning rack, and hanging hooks for drying items. Used many times per day.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "storage-binrack": {
+      "text": "The bin rack design is modular, built from 3030 metric extrusions, aluminum corner brackets, 35mm steel DIN rail, M6x12mm screws, and standard industrial HDPE parts bins. Over 10 years of decision making embedded in the design.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "storage-doors": {
+      "text": "Doors are used for tall item storage. Design constraints: limited items to avoid overloading door hinges, all items must be fixed in all axes to prevent falling when door swings.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "storage-hardware-bins": {
+      "text": "Hardware bins are the main source for hardware selections. Metric components (green-marked section) are highest priority. M2.5 and M6 are the default choices for small and large fasteners respectively.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "storage-supply-shelves": {
+      "text": "Two large shelving units subdivided for fasteners and categorized parts. Goal: collect or return any part in 10 seconds. Approximately 1,000 unique parts per shelving unit. Contains supplies only, not tools.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "tamu-communication": {
+      "text": "TAMU ETID department has severe documentation and communication gaps: no documents meeting criteria of routine updates, traceability, multi-author input, correction pathways, accessible storage, and weekly active use. This means 100-year institutional history is rendered impotent.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tamu.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "tamu-context": {
+      "text": "David Malawey works at Texas A&M University for over a decade, in the Engineering Technology (ETID) department. The department lacks a fabrication shop despite being Applied Engineering \u2014 students lack hands-on prototyping access. OpenLab serves as the recipe for what should exist at TAMU.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tamu.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "tamu-role": {
+      "text": "David Malawey serves as Technical Laboratory Coordinator for MMET (Manufacturing and Mechanical Engineering Technology) students at Texas A&M. Received approval October 2025 to build a display of printegrated parts for hands-on inspection.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "printegrate.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "toolbox-1": {
+      "text": "Box 1 is the cutting box, featured in videos about drilling holes and oscillating tool use.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "toolbox-2": {
+      "text": "Box 2 is the clamping box, containing course fasteners, clamps, pneumatic tools, and circular saw with 5 drawers.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "toolbox-3": {
+      "text": "Box 3 is the instruments box, containing USB cables, adapters, and battery-powered instruments. Requires climate control for safe storage of batteries and circuits. High priority for moisture management with desiccant.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "toolbox-4": {
+      "text": "Box 4 is the hammer box, for forming, sanding, precision cutting, and dusty tasks. Top surface is kept clear for clamping work in adjustable bench clamps.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "toolbox-5": {
+      "text": "Box 5 is the soldering station, containing parts for wiring connections, crimping, soldering, fine work, and heat tools. Has a built-in fume extractor, racks for common screwdrivers, adjustable mounts for lighting and hot air.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "toolbox-6": {
+      "text": "Box 6 is the mechanics tools box with cutting tools, pliers, sockets, and metal files. Many tools date back 15+ years. Drawers are numbered 6.0-6.6 for potential database of key tools.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "toolbox-mods": {
+      "text": "Toolbox modifications for Craftsman CMST-98268-BK (consistent form factor since 2010, compatible with Kobalt/Husky/US General): wood tops from pine 2x4s bonded with wood glue, swinging frames for side tool hanging, upper frames for DIY stations, 3D-printed key caps. CAD model and PDF manual published.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "organize.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "tooling-docsify": {
+      "text": "OpenLab uses Docsify-This (discovered 2024) to render GitHub markdown repositories into simple web pages. Developer: Paul Hibbits.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "tools-vs-supplies": {
+      "text": "Tools are reusable equipment; supplies are consumable items that pair with tools, parts attainable in bulk, items supporting organization, items used as consumables, or items inventoried in quantities that may overflow.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {
+        "example": "A rivet gun is a tool (reusable); rivets are supplies (consumable, paired with the tool). Silicone caulk is a supply (attainable in bulk, unbranded, meets a specific need). Bin dividers are supplies (support organization). A paint stirring stick could be considered a tool but is used as a consumable in this lab, so it's a supply."
+      }
+    },
+    "tour-overview": {
+      "text": "The tour section is about 80% complete as of March 2026. Its goal is to offer visual access to all lab areas in sufficient detail that a reader can reproduce a lab build just like OpenLab.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "tour-structure": {
+      "text": "The lab is organized into toolboxes (combined storage and workspace), stations (dedicated-activity workstations), and storage (materials only, no workspace).",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tour.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "toyota-core-concepts": {
+      "text": "Toyota's five core concepts displayed in OpenLab: 5S, Kaizen, PDCA, Yokoten, and Genchi Genbutsu. These ideas are applied in manufacturing, design, quality control, supplier communication, and team coordination. The same values are fundamental for OpenLab and its community's projects.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "toyota-philosophy": {
+      "text": "Toyota built a powerful and long-standing philosophy of production that ties together engineering, design, manufacturing, quality, and business operations. Toyota employees receive ongoing trainings throughout their work life. Many major automakers and manufacturers have studied and integrated Toyota's processes.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "home.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "tubing-supply": {
+      "text": "Polyethylene tubing (3/8x1/4 inch OD/ID) is a versatile supply used hundreds of ways: hinge pins for printed parts, washers for M5-M8 assemblies, springs, gap fillers, pneumatic air lines, drinking water lines. Compatible with push-to-connect fittings.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "tools.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "vacuum-adapter": {
+      "text": "Universal vacuum hose adapter is a parametric 3D-printed design for customizing fitment between vacuum hoses and attachments. Published on grabCAD. Solves incompatibility between various hose/nozzle sizes.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "methods.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    },
+    "wire-gauge-standard": {
+      "text": "18 gauge is the standard wire gauge for SCUTTLE Robotics power items. 16 gauge used for large battery-driven projects tied to 18V lithium power tool batteries. Designs aim to keep current below 10A for easy terminal selection.",
+      "truth_value": "IN",
+      "justifications": [],
+      "source": "electronics.md",
+      "source_url": "",
+      "source_hash": "",
+      "date": "",
+      "metadata": {}
+    }
+  },
+  "nogoods": [],
+  "repos": {}
+}
